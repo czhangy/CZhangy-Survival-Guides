@@ -52,33 +52,57 @@ html {
 }
 
 h1 {
-    // Typography
-    font-size: calc(clamp(2rem, 1.200rem + 3.200vw, 4rem));
-    font-weight: 700;
-  }
+  // Typography
+  font-size: calc(clamp(2rem, 1.2rem + 3.2vw, 4rem));
+  font-weight: 700;
+}
 
-  hr {
-    // Sizing
-    height: 1px;
-    width: 70%;
-    // Color
-    border: 1px solid #ffd100;
-    // Spacing + centering
-    margin: calc(clamp(1.5rem, 0.900rem + 2.400vw, 3rem)) auto;
-  }
+h2 {
+  // Typography
+  font-size: calc(clamp(1.5rem, 0.9rem + 2.4vw, 3rem));
+  text-decoration: underline;
+  // Spacing
+  margin-bottom: 1rem;
+}
 
-  p {
-    // Alignment
-    text-align: left;
-    // Typography
-    font-size: calc(clamp(1rem, 0.6rem + 1.6vw, 2rem));
-    // Spacing
-    margin-bottom: calc(clamp(1.5rem, 0.900rem + 2.400vw, 3rem));
-    line-height: 1.7;
+h3 {
+  // Typography
+  font-size: calc(clamp(1.5rem, 0.9rem + 2.4vw, 3rem));
+  text-align: left;
+  text-decoration: underline;
+  // Spacing
+  margin-bottom: 1rem;
+}
 
-    a {
-      // Remove default styling
-      color: #ffd100;
-    }
+hr {
+  // Sizing
+  height: 1px;
+  width: 70%;
+  // Color
+  border: 1px solid #ffd100;
+  // Spacing + centering
+  margin: calc(clamp(1.5rem, 0.9rem + 2.4vw, 3rem)) auto;
+}
+
+p {
+  // Alignment
+  text-align: left;
+  // Typography
+  font-size: calc(clamp(1rem, 0.6rem + 1.6vw, 2rem));
+  // Spacing
+  margin-bottom: calc(clamp(1.5rem, 0.9rem + 2.4vw, 3rem));
+  line-height: 1.7;
+
+  a {
+    // Remove default styling
+    color: #ffd100;
   }
+}
+
+img {
+  // Spacing
+  margin-bottom: calc(clamp(1.5rem, 0.9rem + 2.4vw, 3rem));
+  // Sizing for responsiveness
+  max-width: 80%;
+}
 </style>

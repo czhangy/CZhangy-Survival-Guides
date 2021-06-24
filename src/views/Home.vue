@@ -169,6 +169,9 @@ export default {
             // Invert
             background: #ffd100;
             color: #003b5c;
+            // Animate
+            transition: transform 0.7s ease;
+            transform: rotate(360deg);
           }
         }
       }
