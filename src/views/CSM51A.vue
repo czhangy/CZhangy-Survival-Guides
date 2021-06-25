@@ -1,6 +1,6 @@
 <template>
   <div class="csm51a">
-    <h1>CS M51A: Logic Design of Digital Systems</h1>
+    <h1>Surviving CS M51A</h1>
     <hr />
     <h2>Table of Contents</h2>
     <h3

@@ -1,6 +1,6 @@
 <template>
   <div class="phys1c">
-    <h1>PHYS 1C: Electrodynamics, Optics, and Special Relativity</h1>
+    <h1>Surviving PHYS 1C</h1>
     <hr />
   </div>
 </template>
@@ -15,6 +15,7 @@ export default {
 .phys1c {
   // Spacing
   padding: 0 calc(clamp(4rem, 2.4rem + 6.4vw, 8rem));
+  padding-bottom: 2rem;
   // Sizing
   width: 100%;
 }

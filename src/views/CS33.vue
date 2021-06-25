@@ -1,6 +1,6 @@
 <template>
   <div class="cs33">
-    <h1>CS 33: Introduction to Computer Organization</h1>
+    <h1>Surviving CS 33</h1>
     <hr />
     <h2>Table of Contents</h2>
     <h3

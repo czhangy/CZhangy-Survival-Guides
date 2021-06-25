@@ -1,6 +1,6 @@
 <template>
   <div class="cs131">
-    <h1>CS 131: Programming Languages</h1>
+    <h1>Surviving CS 131</h1>
     <hr />
   </div>
 </template>
@@ -15,6 +15,7 @@ export default {
 .cs131 {
   // Spacing
   padding: 0 calc(clamp(4rem, 2.4rem + 6.4vw, 8rem));
+  padding-bottom: 2rem;
   // Sizing
   width: 100%;
 }
