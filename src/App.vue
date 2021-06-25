@@ -29,7 +29,6 @@
 
   .fa-home {
     // Positioning
-    position: realtive;
     top: 3rem;
     right: 3rem;
     // Styling
@@ -74,6 +73,15 @@ h3 {
   margin-bottom: 1rem;
 }
 
+h4 {
+  // Typography
+  font-size: calc(clamp(1rem, 0.6rem + 1.6vw, 2rem));
+  text-align: left;
+  // Indent
+  margin-left: 4rem;
+  margin-bottom: 1rem;
+}
+
 hr {
   // Sizing
   height: 1px;
@@ -104,5 +112,10 @@ img {
   margin-bottom: calc(clamp(1.5rem, 0.9rem + 2.4vw, 3rem));
   // Sizing for responsiveness
   max-width: 80%;
+}
+
+.link {
+  // Clickable
+  cursor: pointer;
 }
 </style>

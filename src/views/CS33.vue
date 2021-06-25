@@ -2,7 +2,272 @@
   <div class="cs33">
     <h1>CS 33: Introduction to Computer Organization</h1>
     <hr />
-    <h2>Introduction</h2>
+    <h2>Table of Contents</h2>
+    <h3
+      class="link"
+      @click="() => $refs['intro'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      Introduction
+    </h3>
+    <h3
+      class="link"
+      @click="() => $refs['1'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      Unit 1: Bit Manipulation
+    </h3>
+    <h4
+      class="link"
+      @click="() => $refs['1.1'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      1.1: The Binary System
+    </h4>
+    <h4
+      class="link"
+      @click="() => $refs['1.2'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      1.2: Bit-Level Manipulations
+    </h4>
+    <h4
+      class="link"
+      @click="() => $refs['1.3'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      1.3: Integers
+    </h4>
+    <h4
+      class="link"
+      @click="() => $refs['1.4'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      1.4: Memory Organization
+    </h4>
+    <h3
+      class="link"
+      @click="() => $refs['2'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      Unit 2: Assembly
+    </h3>
+    <h4
+      class="link"
+      @click="() => $refs['2.1'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      2.1: Basics of Architecture
+    </h4>
+    <h4
+      class="link"
+      @click="() => $refs['2.2'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      2.2: Registers
+    </h4>
+    <h4
+      class="link"
+      @click="() => $refs['2.3'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      2.3: Arithmetic and Logic
+    </h4>
+    <h4
+      class="link"
+      @click="() => $refs['2.4'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      2.4: Condition Codes
+    </h4>
+    <h4
+      class="link"
+      @click="() => $refs['2.5'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      2.5: Control Flow
+    </h4>
+    <h4
+      class="link"
+      @click="() => $refs['2.6'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      2.6: Loops and Switches
+    </h4>
+    <h4
+      class="link"
+      @click="() => $refs['2.7'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      2.7: Stack Structure
+    </h4>
+    <h4
+      class="link"
+      @click="() => $refs['2.8'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      2.8: Procedure Calls
+    </h4>
+    <h3
+      class="link"
+      @click="() => $refs['3'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      Unit 3: Data Management
+    </h3>
+    <h4
+      class="link"
+      @click="() => $refs['3.1'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      3.1: Arrays
+    </h4>
+    <h4
+      class="link"
+      @click="() => $refs['3.2'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      3.2: Structs
+    </h4>
+    <h4
+      class="link"
+      @click="() => $refs['3.3'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      3.3: Memory Layout
+    </h4>
+    <h4
+      class="link"
+      @click="() => $refs['3.4'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      3.4: Buffer Overflow
+    </h4>
+    <h4
+      class="link"
+      @click="() => $refs['3.5'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      3.5: Unions
+    </h4>
+    <h4
+      class="link"
+      @click="() => $refs['3.6'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      3.6: Floating Point
+    </h4>
+    <h3
+      class="link"
+      @click="() => $refs['4'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      Unit 4: Optimization
+    </h3>
+    <h4
+      class="link"
+      @click="() => $refs['4.1'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      4.1: Compiler-Level Optimizations
+    </h4>
+    <h4
+      class="link"
+      @click="() => $refs['4.2'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      4.2: Optimization Blockers
+    </h4>
+    <h4
+      class="link"
+      @click="() => $refs['4.3'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      4.3: Instruction-Level Parallelism
+    </h4>
+    <h3
+      class="link"
+      @click="() => $refs['5'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      Unit 5: The Memory Hierarchy
+    </h3>
+    <h4
+      class="link"
+      @click="() => $refs['5.1'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      5.1: Basic Technologies
+    </h4>
+    <h4
+      class="link"
+      @click="() => $refs['5.2'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      5.2: Locality
+    </h4>
+    <h4
+      class="link"
+      @click="() => $refs['5.3'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      5.3: Caches
+    </h4>
+    <h4
+      class="link"
+      @click="() => $refs['5.4'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      5.4: Matrix Multiplication
+    </h4>
+    <h3
+      class="link"
+      @click="() => $refs['6'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      Unit 6: Parallelism
+    </h3>
+    <h4
+      class="link"
+      @click="() => $refs['6.1'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      6.1: Parallel Computing
+    </h4>
+    <h4
+      class="link"
+      @click="() => $refs['6.2'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      6.2: Worksharing
+    </h4>
+    <h4
+      class="link"
+      @click="() => $refs['6.3'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      6.3: Synchronization
+    </h4>
+    <h3
+      class="link"
+      @click="() => $refs['7'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      Unit 7: Architecture
+    </h3>
+    <h4
+      class="link"
+      @click="() => $refs['7.1'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      7.1: Exceptions
+    </h4>
+    <h4
+      class="link"
+      @click="() => $refs['7.2'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      7.2: Linking
+    </h4>
+    <h4
+      class="link"
+      @click="() => $refs['7.3'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      7.3: Virtual Memory
+    </h4>
+    <h4
+      class="link"
+      @click="() => $refs['7.4'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      7.4: Virtual Addressing
+    </h4>
+    <h3
+      class="link"
+      @click="() => $refs['8'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      Unit 8: MIPS
+    </h3>
+    <h4
+      class="link"
+      @click="() => $refs['8.1'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      8.1: RISC vs. CISC
+    </h4>
+    <h4
+      class="link"
+      @click="() => $refs['8.2'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      8.2: MIPS Basics
+    </h4>
+    <h3
+      class="link"
+      @click="() => $refs['after'].scrollIntoView({ behavior: 'smooth' })"
+    >
+      Afterword
+    </h3>
+    <h2 ref="intro">Introduction</h2>
     <p>
       Not going to lie, I’ve fallen asleep in pretty much every lecture in the
       class, but that’s why this is called “Surviving CS 33”. I’m going to be
@@ -34,7 +299,7 @@
     <p>
       Whoever you’re taking this class with, you’ve got this, don’t let me down.
     </p>
-    <h2>Unit 1: Bit Manipulation</h2>
+    <h2 ref="1">Unit 1: Bit Manipulation</h2>
     <p>
       Bit manipulations and representations are the first thing you’ll run into
       in this class. Although your understanding of the rest of the class
@@ -54,7 +319,7 @@
       pretty likely that you’ll be tested on some of the conceptual stuff that
       the lab doesn’t cover, so just do your best to get a grasp on that.
     </p>
-    <h3>Unit 1.1: The Binary System</h3>
+    <h3 ref="1.1">Unit 1.1: The Binary System</h3>
     <p>
       We’ll start off by taking a look at the binary system. You’ll need to
       become at least a little comfortable with this, but it’s not too bad, you
@@ -96,7 +361,7 @@
       odd numbers end in a 1. We’ll expand this system later on in this unit as
       well as in a later unit, so don’t wait to get the basics down.
     </p>
-    <h3>Unit 1.2: Bit-Level Manipulations</h3>
+    <h3 ref="1.2">Unit 1.2: Bit-Level Manipulations</h3>
     <p>
       So, we’ve finally made it to our first real section. Bit-level
       manipulations are the backbone of your first real lab. They’re pretty easy
@@ -200,7 +465,7 @@
       to cut this off here and address some of those concerns in the next
       section.
     </p>
-    <h3>Unit 1.3: Integers</h3>
+    <h3 ref="1.3">Unit 1.3: Integers</h3>
     <p>
       You’re probably thinking that you know what an integer is, right? Well, I
       hate to break it to you, but compared to what you learned in the 3rd
@@ -368,7 +633,7 @@
       The last topic of this section is really short and straightforward, so
       let’s just get into it.
     </p>
-    <h3>Unit 1.4: Memory Organization</h3>
+    <h3 ref="1.4">Unit 1.4: Memory Organization</h3>
     <p>
       We haven’t really gotten into any memory discussion yet, but this
       shouldn’t be too hard to understand anyways. Really, this topic is just
@@ -460,7 +725,7 @@
       time. For now, it’s time to move on and crush that Data Lab, so set up
       your Linux servers and text editors and get coding. You got this!
     </p>
-    <h2>Unit 2: Assembly</h2>
+    <h2 ref="2">Unit 2: Assembly</h2>
     <p>
       Ok so, let’s remember back to when we did programming in C/C++. Remember
       how nice and readable it was? Well those are both languages meant to be
@@ -481,7 +746,7 @@
       Whatever the case, there’s one thing that I can say for sure. This unit’s
       gonna be massive.
     </p>
-    <h3>Unit 2.1: Basics of Architecture</h3>
+    <h3 ref="2.1">Unit 2.1: Basics of Architecture</h3>
     <p>
       While we’re gonna get a little more into it in a second, it’s nice to know
       why we want to look at the monstrosity from the previous page. Assembly is
@@ -580,7 +845,7 @@
       worry, I’m just building a little foundation before we move on. The real
       learning will come in the next few sections.
     </p>
-    <h3>Unit 2.2: Registers</h3>
+    <h3 ref="2.2">Unit 2.2: Registers</h3>
     <p>
       Like I said, registers are massively important when it comes to assembly.
       Although I expect most of your understanding of this stuff to come from
@@ -637,7 +902,7 @@
       We’ll probably need to expand on a few things later, but this is a good
       enough foundation to start getting into assembly for realsies.
     </p>
-    <h3>Unit 2.3: Arithmetic and Logic</h3>
+    <h3 ref="2.3">Unit 2.3: Arithmetic and Logic</h3>
     <p>
       Now, let’s finally get to work on some instructions. The most basic
       instruction that we’ll start off with is the mov instruction. mov copies
@@ -873,7 +1138,7 @@
       getting into. This stuff is really hard to explain through this medium,
       but I’m giving it my best shot. You better be too.
     </p>
-    <h3>Unit 2.4: Condition Codes</h3>
+    <h3 ref="2.4">Unit 2.4: Condition Codes</h3>
     <p>
       Before we can really move on to our next set of instructions, we have to
       take a deeper dive into condition codes. As mentioned earlier, these are
@@ -949,7 +1214,7 @@
       With that material covered, we can finally get into the more interesting
       instructions.
     </p>
-    <h3>Unit 2.5: Control Flow</h3>
+    <h3 ref="2.5">Unit 2.5: Control Flow</h3>
     <p>
       So here’s where assembly starts getting kinda fun. That might sound like
       sarcasm, but yes, I did actually enjoy this part of the class. No that
@@ -1033,7 +1298,7 @@
       computations, risky computations, or computations with side effects. Those
       are all big no-nos.
     </p>
-    <h3>Unit 2.6: Loops and Switches</h3>
+    <h3 ref="2.6">Unit 2.6: Loops and Switches</h3>
     <p>
       Naturally, now that we’ve looked at if-statements, our next stop is with
       loops. Generally, we have very similar structures across each type of
@@ -1207,7 +1472,7 @@
       We did it! Sorry for the long section, but there’s just so much to cover
       when it comes to assembly. We’re only halfway done.
     </p>
-    <h3>Unit 2.7: Stack Structure</h3>
+    <h3 ref="2.7">Unit 2.7: Stack Structure</h3>
     <p>
       Before we get into another big boy section, we’re going to need to
       backtrack and cover the stack discipline. The stack is a region of memory
@@ -1273,7 +1538,7 @@
       along with how the stack behaves.
     </p>
     <p>Alright, now you’re ready for the big leagues kid.</p>
-    <h3>Unit 2.8: Procedure Calls</h3>
+    <h3 ref="2.8">Unit 2.8: Procedure Calls</h3>
     <p>
       Procedure calls are a special way to alter the control flow of a program.
       They typically pass data in the form of arguments and return values back
@@ -1502,7 +1767,7 @@
       much as you can while working on it, and you’ll never have to study
       assembly for the remainder of the class. Good luck!
     </p>
-    <h2>Unit 3: Data Management</h2>
+    <h2 ref="3">Unit 3: Data Management</h2>
     <p>
       Ok so we’re not out of the metaphorical woods yet. We’ve still got quite a
       lot of assembly to cover, but it’s probably better that I split this up
@@ -1521,7 +1786,7 @@
       do too.
     </p>
     <p>Are you excited? Me neither.</p>
-    <h3>Unit 3.1: Arrays</h3>
+    <h3 ref="3.1">Unit 3.1: Arrays</h3>
     <p>
       So let’s back way the hell up and think about what an array is. An array
       is a contiguously allocated chunk of memory. That property is what allows
@@ -1668,7 +1933,7 @@
       arrays aren’t a hugely important topic or anything, but I thought I’d
       touch on them to cover all our bases.
     </p>
-    <h3>Unit 3.2: Structs</h3>
+    <h3 ref="3.2">Unit 3.2: Structs</h3>
     <p>
       You’ve probably worked with structs a little bit in CS 31/32. From my
       experience, they were introduced, and then pushed aside because classes
@@ -1765,7 +2030,7 @@
       above, it doesn’t matter how you order the elements, it’ll always take up
       24 bytes, but it doesn’t hurt to keep in mind.
     </p>
-    <h3>Unit 3.3: Memory Layout</h3>
+    <h3 ref="3.3">Unit 3.3: Memory Layout</h3>
     <p>
       So, for a while now, we’ve been skirting around what memory really looks
       like. We took a close look at stacks in the previous section, but we’ll
@@ -1839,7 +2104,7 @@
       you never expected an actual transition from me did you? Don’t get used to
       it. Why am I doing this to myself?
     </p>
-    <h3>Unit 3.4: Buffer Overflow</h3>
+    <h3 ref="3.4">Unit 3.4: Buffer Overflow</h3>
     <p>
       This issue that we left off with in the last section is known as buffer
       overflow. This is the most common technical cause for security
@@ -1973,7 +2238,7 @@
       wondering how to place the address of your cookie into the stack. I’m just
       here to inform you of all your options.
     </p>
-    <h3>Unit 3.5: Unions</h3>
+    <h3 ref="3.5">Unit 3.5: Unions</h3>
     <p>This is going to be such a small section it’s ridiculous.</p>
     <p>
       A union is a data structure very similar to a struct. However, instead of
@@ -2000,7 +2265,7 @@
       likely get asked questions about these, and when they get real complex,
       they can be a real pain.
     </p>
-    <h3>Unit 3.6: Floating Point</h3>
+    <h3 ref="3.6">Unit 3.6: Floating Point</h3>
     <p>
       To cap off this section, we’re going to take a look at floating point
       representations in binary. Earlier, we set a pretty basic foundation for
@@ -2271,7 +2536,7 @@
       smash that like button and go subscribe to the – wait, wrong platform.
     </p>
     <p>Sigh.</p>
-    <h2>Unit 4: Optimization</h2>
+    <h2 ref="4">Unit 4: Optimization</h2>
     <p>
       Ok we’re moving from the land of assembly to the land of theory. I’ll
       leave it up to you to decide which one is worse. Optimization can be a
@@ -2289,7 +2554,7 @@
       that, well, you need the material here to succeed in Parallel Lab, so
       there ya go.
     </p>
-    <h3>Unit 4.1: Compiler-Level Optimizations</h3>
+    <h3 ref="4.1">Unit 4.1: Compiler-Level Optimizations</h3>
     <p>
       Up until this point, the only performance analysis that you’ve done is
       through big-O. When we talked about that in CS 32, we did a lot of
@@ -2374,7 +2639,7 @@
       have to take a quick look at some things that may make our lives a little
       harder.
     </p>
-    <h3>Unit 4.2: Optimization Blockers</h3>
+    <h3 ref="4.2">Unit 4.2: Optimization Blockers</h3>
     <p>
       As we stated in the last section, compilers must be conservative with the
       optimizations they make. Oftentimes, our code will have specific
@@ -2456,7 +2721,7 @@
       Ok, so that’s the more basic stuff out of the way. Now it’s time to dive a
       little bit more into the hardware-level and see what we can exploit there.
     </p>
-    <h3>Unit 4.3: Instruction-Level Parallelism</h3>
+    <h3 ref="4.3">Unit 4.3: Instruction-Level Parallelism</h3>
     <p>
       Instruction-Level Parallelism or ILP is based on the idea that modern
       processors can execute multiple instructions at the same time. In order to
@@ -2622,7 +2887,7 @@
       you write your code, and keep your eye out for opportunities to use the
       boundless knowledge I’ve bestowed upon you in these pages.
     </p>
-    <h2>Unit 5: The Memory Hierarchy</h2>
+    <h2 ref="5">Unit 5: The Memory Hierarchy</h2>
     <p>
       Just like the previous unit, our discussion here is going to be pretty
       short. We’re going to expand a little more into the world of hardware here
@@ -2641,7 +2906,7 @@
       clearly on the decline so I am sorry if you get lost here, it’s probably
       my fault.
     </p>
-    <h3>Unit 5.1: Basic Technologies</h3>
+    <h3 ref="5.1">Unit 5.1: Basic Technologies</h3>
     <p>
       Before we dive into the real material, we’re going to give a quick rundown
       of some general terms that it’ll be nice to be aware of.
@@ -2692,7 +2957,7 @@
       structures, and that’s what we’ll look at in the next topic. Please rate
       that transition, I’m so proud of myself.
     </p>
-    <h3>Unit 5.2: Locality</h3>
+    <h3 ref="5.2">Unit 5.2: Locality</h3>
     <p>
       Locality is the idea that programs tend to use data and instructions with
       addresses near or equal to those they have used recently. Within the
@@ -2736,7 +3001,7 @@
       or column-major order to maximize locality? The answer should be pretty
       easy, you’ll know if you have the right one.
     </p>
-    <h3>Unit 5.3: Caches</h3>
+    <h3 ref="5.3">Unit 5.3: Caches</h3>
     <p>
       We can now move into the main discussion of the section. Based on many
       factors ranging from technology trends to locality, memory is organized
@@ -2857,7 +3122,7 @@
       poor writing, definitely not feeling like myself today. Hopefully I can
       bounce back soon.
     </p>
-    <h3>Unit 5.4: Matrix Multiplication</h3>
+    <h3 ref="5.4">Unit 5.4: Matrix Multiplication</h3>
     <p>
       Let’s imagine we need to write a program that multiplies 2 n x n matrices
       containing doubles. Let’s take a naïve approach to this, ignoring all
@@ -2953,7 +3218,7 @@
       stepping through matrices with ijk. Good luck! I need to go see a
       psychiatrist.
     </p>
-    <h2>Unit 6: Parallelism</h2>
+    <h2 ref="6">Unit 6: Parallelism</h2>
     <p>
       So, this unit is going to cover another optimization technique called
       parallelism. We’re actually going be using a little mini-language within C
@@ -2971,7 +3236,7 @@
       which you actually need to use it for this class is pretty limited, so
       just pay attention and you’ll be a-ok. Let’s-a go.
     </p>
-    <h3>Unit 6.1: Parallel Computing</h3>
+    <h3 ref="6.1">Unit 6.1: Parallel Computing</h3>
     <p>
       In the last unit, we discussed multiple ways we can optimize program
       performance given a single processor. Parallel computing attempts to
@@ -3100,7 +3365,7 @@
       that we’ll be analyzing in the following topic. With that long intro out
       of the way, let’s dive right in.
     </p>
-    <h3>Unit 6.2: Worksharing</h3>
+    <h3 ref="6.2">Unit 6.2: Worksharing</h3>
     <p>
       Learning OpenMP is really just going to be like learning a mini-language.
       I wouldn’t say much of the C/C++ you’ve learned so far is going to be
@@ -3229,7 +3494,7 @@
       proving to yourself why each pragma was used:
     </p>
     <img src="@/assets/CS33/img183.png" />
-    <h3>Unit 6.3: Synchronization</h3>
+    <h3 ref="6.3">Unit 6.3: Synchronization</h3>
     <p>
       Like we mentioned earlier, synchronization of threads plays a huge role in
       making parallelization more complex. Let’s take the following code
@@ -3411,7 +3676,7 @@
       The rest of the class is gonna cover a fairly wide array of topics, so get
       your brain ready.
     </p>
-    <h2>Unit 7: Architecture</h2>
+    <h2 ref="7">Unit 7: Architecture</h2>
     <p>
       As promised, we have a wide array of topics ahead of us. For now, I’m just
       classifying them as discussions on the architecture of computers that will
@@ -3428,7 +3693,7 @@
       overwhelm yourself here if you’re not careful. Just remember that you’re
       almost there, this is the last real unit before we’re done.
     </p>
-    <h3>Unit 7.1: Exceptions</h3>
+    <h3 ref="7.1">Unit 7.1: Exceptions</h3>
     <p>
       So up until now, we’ve talked about control flow at a very high level.
       Something we really overlook usually is that a processors’ only job is
@@ -3524,7 +3789,7 @@
       point in the class where I stopped really paying attention, so I’ll have
       to relearn some stuff to be useful. Save me from this torture.
     </p>
-    <h3>Unit 7.2: Linking</h3>
+    <h3 ref="7.2">Unit 7.2: Linking</h3>
     <p>
       So we have a little background in linking from CS 32. Starting with what
       we know, let’s imagine we have 2 files:
@@ -3655,8 +3920,486 @@
       filled in the (many) gaps I left in that explanation. Thankfully, we only
       have a little bit more left to cover, so I’m more excited than ever.
     </p>
-    <h3>Unit 6.1: Parallel Computing</h3>
-    <h3>Unit 6.1: Parallel Computing</h3>
+    <h3 ref="7.3">Unit 7.3: Virtual Memory</h3>
+    <p>
+      As we close out our discussion on architecture, we need to note that the
+      model we’ve presented so far has been of a very simplistic system. As a
+      basic summary, we have some CPU communicating with main memory to execute
+      instructions. This system works just fine for very simple procedures like
+      an elevator or microwave. However, we need to add another level of
+      complexity to achieve the performance of our computers or smartphones
+      today. Our modern devices allow for the use of multiple programs running
+      simultaneously, and this parallel execution requires a more creative use
+      of main memory. To solve this, we implement virtual memory, where each
+      application that’s running believes it has its own addressing space to
+      itself. The CPU that’s running a given application can then provide these
+      virtual addresses to a system’s Memory Management Unit, or MMU, which then
+      translates the virtual address into an actual address:
+    </p>
+    <img src="@/assets/CS33/img202.png" />
+    <p>
+      Let’s provide some more context before we really dive into how this works.
+      Earlier, I used the term address space, which, in general is an ordered
+      set of contiguous, non-negative integer addresses:
+    </p>
+    <img src="@/assets/CS33/img203.png" />
+    <p>
+      Within the system we’ve outlined so far, we have 2 different types of
+      address spaces. The first is the virtual address space, a set of N = 2n
+      virtual addresses. This space is what the program believes main memory
+      looks like, and what the program reads from and writes to. The other is
+      the physical address space, a set of M = 2m physical addresses. This space
+      is what main memory actually is.
+    </p>
+    <p>
+      So, why do we use virtual memory at all? Well, the most basic reason is
+      that, if we used a purely physical system, how would that even work? How
+      would a given program know where in memory to write to? Would Snapchat be
+      able to communicate with Instagram in order to divide memory space? What
+      if we threw in Angry Birds: Star Wars Edition into the mix? Things get
+      real uh oh real fast if we try to implement it this way. Any given program
+      would have to be able to communicate with every other program ever created
+      to function correctly.
+    </p>
+    <p>
+      Diving a little deeper, and using our knowledge we’ve built up over the
+      course of the class (haha yeah right), we can find a few more important
+      benefits as well. For one, using virtual memory allows us to leverage main
+      memory more efficiently. Instead of every program trying to take up the
+      higher, faster levels of the memory hierarchy, virtual memory uses DRAM as
+      a cache for data, while storing unused components of a program on disk.
+      Virtual memory also allows us to simplify memory management by assigning
+      each process a uniform linear address space. Look at all those big words.
+      This is basically the benefit that arises from the issue from a couple
+      paragraphs ago. Instead of having to play the world’s worst jigsaw puzzle
+      every time you open more than 5 apps at the same time, we can just provide
+      each app with its own addressing space, and make the MMU deal with
+      assigning their data to main memory. Finally, virtual memory also isolates
+      address spaces, meaning programs can’t interfere with each other’s memory.
+      Imagine you’re just having a great time looking through Instagram on your
+      computer because you’re a psychopath and you click on a picture. Suddenly,
+      your YouTube tab thinks you wanted to listen to “Windows XP Startup Sound
+      slowed down to 24 hours” on max volume. Oh no, now your hearing is just as
+      gone as my will to live. Since each process has its own addressing space,
+      things like this can’t happen. Your hearing is safe for now.
+    </p>
+    <p>
+      So, conceptually, virtual memory is just an array of N contiguous bytes.
+      As mentioned earlier, we store virtual memory on disk, and we cache it in
+      DRAM. Each entry in this array is called a page, with size P = 2p bytes:
+    </p>
+    <img src="@/assets/CS33/img204.png" />
+    <p>
+      As with any cache, some pages from VM will exist in PM, and those that
+      don’t would be brought into PM if they were to be accessed. Now, remember
+      that each level in the memory hierarchy is magnitudes slower than the
+      previous one. Quantitatively, DRAM is ~10x slower than SRAM, but disk is
+      ~10,000x slower than DRAM. As a result, we implement VM with a relatively
+      large page size, somewhere from 4KB to 4MB, in order to try and reduce the
+      amount of times we have to take this 10,000x bad penalty through spatial
+      locality.
+    </p>
+    <p>
+      In order for this system to work, we also have complete associativity
+      between pages in VM and pages in PM. This means that any VP can be placed
+      at any PP through a very sophisticated mapping function that we won’t
+      cover here. What we will talk about is the structures that support this
+      function.
+    </p>
+    <p>
+      You know what it’s time for? That’s right, another table. A page table is
+      an array of page table entries (PTEs) that maps VPs to PPs. This page
+      table is located in DRAM, and contains a valid bit that tells us whether
+      or not a given page is in PM, the physical page number of pages that are
+      in PM, and, depending on the system, the virtual address of pages not in
+      PM. Like with everything in this class, this is unfortunately better
+      understood with a diagram:
+    </p>
+    <img src="@/assets/CS33/img205.png" />
+    <p>
+      So, we have a valid bit of 1 in the page table for entries that are
+      currently cached in PM, light gray boxes for entries that are not cached
+      in PM, and some null pointers for entries that don’t exist at all. Give it
+      a little look-over, nothing should be too confusing there.
+    </p>
+    <p>
+      Much like with regular caches, we identify page hits as attempted accesses
+      to pages currently in physical memory. We’d get a page hit if we attempted
+      to access VP 2 above, for example. Instead of calling the opposite
+      scenario a page miss, however, we call it a page fault. A page fault is
+      simply when we reference a page that’s not in PM. We’d run into this if we
+      attempted to access VP 3, as it’s not cached in PM. As we mentioned a
+      couple sections ago, page faults raise an exception, which causes the page
+      fault handler to go and evict a victim in PM and move the target page in.
+      Afterwards the source instruction is restarted, resulting in a page hit.
+      Not all pages are created upon startup of a program, so we can also
+      allocate new pages in the page table. For instance, VP 5 is unallocated in
+      the above example, so we’re able to deal with that as well.
+    </p>
+    <p>
+      This all seems horrible and awful and bad. Why does it even work? Well,
+      program behavior is predictable. At any given time, programs tend to
+      access a set of active VPs called the working set. Essentially, we’re only
+      ever using a small subset of a program’s data, allowing us to abuse
+      locality for performance. Once some initial page faults occur (compulsory
+      misses) and the working set is fully cached, as long as the working set
+      size is less than the main memory size, we’ll have good performance for
+      that given program. Of course, the entire point of virtual memory is to
+      allow us to run multiple programs at once, so if the sum of all working
+      set sizes is greater than the main memory size, we have a problem. This is
+      called thrashing, when the performance just nukes itself because pages in
+      working sets are constantly being swapped in and out of DRAM.
+    </p>
+    <p>
+      Let’s continue by taking a deeper look at what we mean when we say that
+      each process has its own virtual address space. Every process essentially
+      is presented with an illusion of what main memory looks like. This
+      illusion allows the process to read and write to a memory that is linear
+      and simple. When we compile and link our code, the program uses this
+      illusion to simplify the process. Once we actually execute this program,
+      the MMU will map the entries in VM to scattered locations in PM. By
+      breaking this into a multi-step process, the mapping function used by the
+      MMU can allow multiple processes, which all believe they have their own
+      independent memories, to coexist.
+    </p>
+    <p>
+      The virtual address space also simplifies some of the smaller steps along
+      the way. Linking is simplified, since each program has a similar virtual
+      address space, meaning the code/data/heap/etc. always start at the same
+      addresses in VM. This standardization applies to loading as well, allowing
+      for easy access to the .text and .data segments.
+    </p>
+    <p>
+      This stuff is pretty dense, so I’m gonna choose to split this up into 2
+      sections. I recommend taking time to catch up if you’ve gotten lost
+      anywhere along the way.
+    </p>
+    <h3 ref="7.4">Unit 7.4: Virtual Addresses</h3>
+    <p>
+      With that foundation set, let’s talk a little about how VM addresses
+      actually get translated. Before we start, let’s give us some shorthand to
+      make my life much easier:
+    </p>
+    <img src="@/assets/CS33/img206.png" />
+    <p>
+      With that, let’s completely overwhelm you by giving you the entire
+      overview of the process right off the bat:
+    </p>
+    <img src="@/assets/CS33/img207.png" />
+    <p>
+      There’s a lot to break down here. First of all, the PTBR in the top left
+      is simply a container for the address of the start of the page table,
+      which is located in DRAM.
+    </p>
+    <p>
+      Now, you’ll notice that the addresses are split up into 2 components: the
+      page number and the page offset. The size of the page offset is determined
+      by the page size of the system. For example, a system with a 214 byte page
+      size will have a page offset of 14 bits. The rest of the address is then
+      taken up by the page number, which is used as an index into the page
+      table. Accessing the PTBR and using the VPN as an index, we can then
+      access a specific PTE and check if that entry is currently in PM. If the
+      entry is in PM, we can take that PPN from the page table and append the
+      VPO to it to form a physical address. Otherwise, we need to access the
+      page fault handler and pull the desired page in from disk.
+    </p>
+    <p>
+      Next, we need to note that the VPO and PPO are exactly the same. The VPO
+      is simply used to identify specific data within a page by telling the
+      system how far away from the beginning of the page the data is. Since the
+      page itself doesn’t change from VM to PM, only the address does, the
+      offset from the beginning of the page, or the PPO, should be the same.
+    </p>
+    <p>
+      As a quick summary, we’re taking the VPN of a page, using it as an index
+      into the page table to find the PPN, and then creating our physical
+      address by appending the VPO to the PPN.
+    </p>
+    <p>
+      In an effort to speed up this translation process, we introduce a new
+      piece of hardware called the Translation Lookaside Buffer, or TLB. The TLB
+      is a specialized cache in the MMU that caches PTEs from the page table
+      itself. Generally, PTEs are found in the L1 cache, but the TLB is even
+      faster, as it is smaller and separate from the rest of the memory
+      hierarchy. Ok, here’s where it’s gonna get confusing, so try to stay with
+      me here. In general, here’s what the virtual address looks like:
+    </p>
+    <img src="@/assets/CS33/img208.png" />
+    <p>
+      From the perspective of the TLB, we actually have to break up this address
+      a little more:
+    </p>
+    <img src="@/assets/CS33/img209.png" />
+    <p>
+      So what do these actually mean? Well, like any cache, the TLB has entries
+      that look something like:
+    </p>
+    <img src="@/assets/CS33/img210.png" />
+    <p>
+      Quick review. Each entry in the cache has a valid bit v that tells us
+      whether or not the given cache block is valid data. It’s extremely
+      important to note that this valid bit has nothing to do with the valid bit
+      in the PTE itself that tells us if the page is in PM. Each entry also has
+      a tag to identify what specific PTE the cache block holds, since it’s no
+      longer organized by the indexing of the page table. And finally, we have
+      the PTE data.
+    </p>
+    <p>
+      Now, back to the virtual address. The TLBI is an index that picks a
+      particular set for the virtual address to be cached in. The TLBT tells us
+      which tag we’re looking for within the set given by the TLBI. Yes this is
+      very complicated and yes you might need to relearn this a couple times,
+      but I believe in you nonetheless.
+    </p>
+    <p>
+      The nice thing about implementing the TLB is that, if we find the data
+      we’re looking for in the TLB, we manage to avoid having to access memory
+      at all, eliminating the large amount of overhead that that access creates.
+      If we sustain a TLB miss, we do have to access the page table in memory
+      and go through that whole process, while also writing the PTE to the TLB
+      in an effort to maximize locality. Just take a second and reread that
+      sentence. It’s amazing that you can actually understand that now right?
+      Fortunately for us, this missing behavior is rare due to the inherent
+      locality of our programs and the large page size our systems use.
+    </p>
+    <p>
+      The real issue comes when our page tables start getting too massive for
+      our systems to handle. Imagine a system with a 4KB (212 byte) page size,
+      48-bit address space (248 possible addresses), and 8-byte PTE. This system
+      would need a 512 GB page table (feel free to check the math if you want).
+      That’s way too much memory getting taken up right there.
+    </p>
+    <p>
+      The common solution to this is having a multi-level page table. Think back
+      to when we discussed multi-level arrays. This is essentially the same
+      thing. In a 2-level page table, the first level of the page table is
+      located in DRAM and has PTEs that point to the second level page tables.
+      The second level of page tables are on disk and get paged in and out of
+      DRAM, and are like normal page tables that point to pages of data. This
+      structure allows us to divide up the massive page table and only store
+      given chunks of it in memory. These’ll look something like this:
+    </p>
+    <img src="@/assets/CS33/img211.png" />
+    <p>
+      As you might expect, this complicates the virtual addressing of pages.
+      Since we won’t dive too much into in this class, I’ll just say that you
+      essentially just place the page numbers for each level of the page table
+      into the address, so for a k-level page table, your address would look
+      something like:
+    </p>
+    <img src="@/assets/CS33/img212.png" />
+    <p>
+      The trade-off here is that, the more levels you have, the less you have to
+      actually store in physical memory, but the more memory requests you’re
+      going to go through in order to traverse the levels of the page table.
+    </p>
+    <p>
+      And that’s it. No more hardware discussion for the rest of the class. In
+      fact, we’re closing in on the last lecture here, and it’s a pretty easy
+      one, so start celebrating. Oh wait, finals exist. Better start reviewing
+      and studying. Hooray.
+    </p>
+    <h2 ref="8">Unit 8: MIPS</h2>
+    <p>
+      In this section, we’re going to be backtracking a little bit back to
+      assembly. Instead of limiting ourselves to x86 this time, we’re going to
+      be taking a look at a more modernized architecture that has some vast
+      differences. Despite this, there really isn’t much complexity here and the
+      material shouldn’t really be anything you struggle with.
+    </p>
+    <p>
+      As you probably know by now, there isn’t going to be a lab for this, so
+      practice is really in your hands here. There’s only 1 lecture left, so
+      there isn’t much to cover; let’s just try to get through it.
+    </p>
+    <h3 ref="8.1">Unit 8.1: RISC vs. CISC</h3>
+    <p>
+      When we originally discussed assembly, we looked at x86-64, a CISC
+      architecture. In this section, we’re looking at MIPS, which is a RISC
+      architecture. Before we get into MIPS itself, let’s take a quick look at
+      some of the differences between RISC and CISC.
+    </p>
+    <p>
+      In terms of registers, RISC has more registers, but less specification in
+      register classes. As we saw in CISC, we had 64-bit registers like %rax,
+      32-bit registers like %eax, etc. which added a degree of complexity that
+      is absent in RISC. In addition to this, RISC instructions only use
+      registers as operands, while in CISC architectures, we were able to use
+      memory addresses as well. This means that loading from memory into a
+      register and writing from a register to memory is going to be used
+      constantly throughout RISC, resulting in the identification of MIPS as a
+      load-store architecture.
+    </p>
+    <p>
+      RISC instructions also tend to use 3 operands rather than 2 in CISC. As we
+      know from x86-64, our instructions generally have a source and a
+      destination. We’ll see this format change as we dive into MIPS. Finally,
+      and most importantly, RISC instructions have a fixed length (32 bits in
+      MIPS). This offers less flexibility than CISC’s variable instruction
+      length, but makes up for it by reducing the complexity of interpreting
+      instructions. This comes from the history of these architectures, as CISC
+      was designed when memory was expensive, therefore optimizing memory usage
+      was the number 1 priority. Instructions needed to be represented in as few
+      bits as possible. Meanwhile, RISC was developed later, when memory was
+      less of an issue, and attention turned towards optimization methods like
+      pipelining, where breaking down complex instructions into simpler ones
+      became more useful.
+    </p>
+    <p>
+      As the name implies, RISC architectures have a relatively limited set of
+      instructions. Generalizing a little bit, our operations will generally
+      fall into 1 of 5 categories: arithmetic, logical, comparison, control, and
+      memory access. With all of that out of the way, let’s get into some MIPS.
+    </p>
+    <h3 ref="8.2">Unit 8.2: MIPS Basics</h3>
+    <p>So, let’s take a fragment of code that looks like:</p>
+    <img src="@/assets/CS33/img213.png" />
+    <p>
+      You might have some ideas about how we’d translate this into x86-64. Don’t
+      worry, I won’t make you do that. Instead, let’s just take a quick look at
+      some pseudocode (pseudo-assembly?) of the translation into MIPS:
+    </p>
+    <img src="@/assets/CS33/img214.png" />
+    <p>
+      As you can see, performing this arithmetic is going to make use of a lot
+      more instructions than in x86-64 due to the need to load and write to
+      memory. Let’s start to break this all down.
+    </p>
+    <p>
+      First, we’ll take a look at how registers are organized in MIPS. In
+      general, we have 32 32-bit registers used in instructions. Rather than
+      denoting registers with a % like in x86-64, we use $ instead. We can label
+      these registers $0 through $31, but some are given special names, which
+      we’ll see later. We’re also given a 32-bit program counter (PC), which is
+      essentially the MIPS equivalent of %rip. Some special-purpose registers
+      that we’ll mention are HI and LO, which are used for multiplication and
+      division, and $f0–$f31, which are used for floating point arithmetic.
+    </p>
+    <p>
+      As I mentioned, $0–$31 can be given some special names. You won’t have to
+      memorize these obviously, but here they are anyways, since this is what
+      you’ll be looking at when dealing with MIPS:
+    </p>
+    <img src="@/assets/CS33/img215.png" />
+    <p>
+      Since we don’t go too in detail with MIPS in this course, don’t worry too
+      much about knowing what register does what. This table is just meant to
+      provide a little context for our assembly.
+    </p>
+    <p>
+      For a little more context, let’s also establish some shorthand for our
+      operands. We’ll be using rd for our destination registers, rs for our
+      source registers, rt for our source and destination registers, and immed
+      for 16-bit immediates (constants).
+    </p>
+    <p>
+      Now we can finally get started. We’ll open up by looking at the load and
+      store instructions, which (shockingly) load and store data from memory.
+      load takes values from memory and places them in a register, while store
+      does the opposite. Within a load or store instruction, we must specify the
+      address we’re accessing, which is a 32-bit value. Now, since all MIPS
+      instructions are 32-bit, we need to store this address in a creative way.
+      We do this in base-offset form, where we have a base register that
+      contains a 32-bit address, and we add a 16-bit immediate that acts as an
+      offset. The base register must be set up ahead of time in order to place
+      our memory access in the correct location. Here are some examples:
+    </p>
+    <img src="@/assets/CS33/img216.png" />
+    <p>
+      Moving onto arithmetic operations, we have a little adjusting to do. We’re
+      pretty used to the Src, Dest format of x86-64, however, MIPS uses an rd,
+      rs, rt format, which writes the destination first, so we just need to take
+      time to get used to it:
+    </p>
+    <img src="@/assets/CS33/img217.png" />
+    <p>
+      Other than the change in formatting, nothing too tricky here. The only
+      other thing I want to note is that the I suffix simply indicates the
+      operation uses an immediate as an operand.
+    </p>
+    <p>
+      Moving along with the grace of a gazelle, we’ll take a look at
+      conditionals and branching. Compared to the long discussion on this in
+      x86-64, we have a very limited set of conditionals in MIPS. In fact the
+      only thing we can test with a single instruction in MIPS is equality:
+    </p>
+    <img src="@/assets/CS33/img218.png" />
+    <p>
+      What about more complicated comparisons like less than, or, god forbid,
+      greater than? If we want to use those, we need to use the SLT or SLTU
+      instruction:
+    </p>
+    <img src="@/assets/CS33/img219.png" />
+    <p>
+      This instruction checks if rs &lt; rt, and, if it is, sets rd to 1.
+      Otherwise rd is set to 0. Therefore, if we wanted to branch to L1 if $5 >
+      $6, we could do:
+    </p>
+    <img src="@/assets/CS33/img220.png" />
+    <p>Like with x86, we can also have unconditional jumps in MIPS:</p>
+    <img src="@/assets/CS33/img221.png" />
+    <p>
+      Here, target is a 26-bit address. The reasoning for this is just mundane
+      so I’m not going to bother going over it, I’m not even sure you needed to
+      know the size in the first place. We can also use registers to specify our
+      destination:
+    </p>
+    <img src="@/assets/CS33/img222.png" />
+    <p>The final type of jump we’ll bother with are jump and links:</p>
+    <img src="@/assets/CS33/img223.png" />
+    <p>The final type of jump we’ll bother with are jump and links:</p>
+    <img src="@/assets/CS33/img224.png" />
+    <p>
+      Something you may have noticed is that immediates in MIPS, other than the
+      target of jumps, are 16-bit. However, in some cases, we need to use values
+      that are more than 16 bits, in which case we make use of the LUI
+      instruction:
+    </p>
+    <img src="@/assets/CS33/img225.png" />
+    <p>
+      LUI sets the upper 16 bits of a rt to immed and zeroes out the lower 16
+      bits.
+    </p>
+    <p>
+      Those are the basic instructions out of the way. Now, the entire point of
+      MIPS is to provide very simple instructions, which is why the list of
+      instructions we’ve presented so far seems pretty small compared to x86.
+      However, since building everything from the ground up using these
+      instructions may be pretty tedious, MIPS gives the programmer access to
+      some pseudo-instructions to make life easier:
+    </p>
+    <img src="@/assets/CS33/img226.png" />
+    <p>
+      Go ahead and see how each of those instructions can get expanded into the
+      simple MIPS instructions we went over earlier. It’s a decent test to see
+      if you’ve understood what we’ve covered so far. Just like with x86, MIPS
+      is only really going to come to you with practice, so whatever resources
+      you have available to you, whether it’s LA worksheets or practice exams,
+      get on that.
+    </p>
+    <p>
+      We really did it. Only a little over 80 hours of work. Get hyped, and
+      start getting ready for your final. You’ve totally got this.
+    </p>
+    <h2 ref="after">Afterword</h2>
+    <p>
+      There we go, it’s finally over. 5 unit CS class done for. The material
+      here is definitely pretty polarizing. If you liked it, fantastic. If you
+      didn’t, well this is one of the lowest level (system-wise) CS classes in
+      the curriculum, so don’t stress about it too much.
+    </p>
+    <p>
+      Hopefully I was able to help you out in some way, although I didn’t expect
+      to make you an A student all by myself. Any feedback on this stuff would
+      be mucho appreciated, and would help me figure out if I want to put myself
+      through hundreds of pages of torture in the future.
+    </p>
+    <p>
+      Usually, I’d end the guide off with some practice problems or something,
+      but there really isn’t much I can give you in this case. Hopefully you’ve
+      got access to homeworks, exams, worksheets, or something to help you.
+    </p>
+    <p>Good luck with whatever you’re doing next, and thanks for reading!</p>
   </div>
 </template>
 
