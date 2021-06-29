@@ -3184,27 +3184,1745 @@
       luck!
     </p>
     <h3 ref="6.4">Unit 6.4: Refraction</h3>
+    <p>
+      Ok so, we’ve gotten ourselves started with optics now, but we still have
+      yet to use one of the rules we established earlier: Snell’s Law. So let’s
+      get an example that we can visualize this with. Imagine a coin at the
+      bottom of a body of water:
+    </p>
+    <img src="@/assets/PHYS1C/img319.png" />
+    <p>
+      So we’re going to treat the coin as our object. The question we’re gonna
+      try to answer is where does the image appear relative to the depth of the
+      water? Starting with ray tracing, we get:
+    </p>
+    <img src="@/assets/PHYS1C/img320.png" />
+    <p>
+      Following the rules we’ve been working with so far, an observer at the top
+      of the diagram sees the image where the emerging rays intersect, a
+      distance d downwards. If we take care in labelling our angles from Snell’s
+      Law:
+    </p>
+    <img src="@/assets/PHYS1C/img321.png" />
+    <p>
+      We can see that we’ve really just broken this down into a geometry
+      problem. Let’s take the 2 obvious triangles:
+    </p>
+    <img src="@/assets/PHYS1C/img322.png" />
+    <p>
+      So, clearly not to scale. We can see that they have a common side length,
+      so we can use it to relate the other values:
+    </p>
+    <img src="@/assets/PHYS1C/img323.png" />
+    <p>
+      Now, we can take advantage of the fact that in this problem, and many
+      other optics problems, we’re dealing with small angles. Therefore:
+    </p>
+    <img src="@/assets/PHYS1C/img324.png" />
+    <p>Then, by Snell’s Law:</p>
+    <img src="@/assets/PHYS1C/img325.png" />
+    <p>
+      Feel free to plug in the known indexes of refraction, I’m not going to
+      because that wasn’t the point of this example. We’ve just been introduced
+      to refraction, the behavior that light exhibits upon crossing mediums. You
+      can bet this is going to be something really capable of adding complexity
+      to our optics problems. For instance, think about what would happen if the
+      above example had multiple mediums separating the object from the
+      observer. How would you solve it then? Or if the indexes had a different
+      relationship (n2 &lt; n1). We won’t go through with those, but they might
+      be worth thinking about.
+    </p>
+    <p>
+      Moving on, what if we push the above example to its outer limits? Picture
+      this:
+    </p>
+    <img src="@/assets/PHYS1C/img326.png" />
+    <p>
+      Where does that rightmost ray emerge? Obviously, the ray cannot go any
+      farther from the normal while staying in n1. As a result, the emerging ray
+      exhibits a phenomenon called total internal reflection:
+    </p>
+    <img src="@/assets/PHYS1C/img327.png" />
+    <p>
+      Ok so there a few things to go over now. For one, you can see I traced out
+      a blue circle. This represents the area where light from the object
+      actually escapes the medium. Any rays beyond that circle are subject to
+      total internal reflection, and therefore remain inside the original
+      medium. In addition, you can see I labeled the incident angle that
+      corresponded to an emerging angle of 90º as the critical angle. This is
+      the limit of where rays are able to escape. It can be calculated by:
+    </p>
+    <img src="@/assets/PHYS1C/img328.png" />
+    <p>
+      As a thought experiment, it might be helpful to use reversibility of rays
+      to imagine what you’d see from the coin’s perspective.
+    </p>
+    <p>
+      Now, if I were to follow the lectures exactly, right now is where I would
+      apply this concept to a series of examples regarding fiber optics. At the
+      same time, I probably don’t hate whoever’s reading this, so I will not
+      subject you to that torment. I trust you can do the level of geometry we
+      needed here and have the ability to apply it to whatever’s thrown at you.
+    </p>
+    <p>
+      Ok, I know this section is getting really long, but we’ve still got quite
+      a lot to cover, and it really shouldn’t be separated, so sorry.
+    </p>
+    <p>Let’s shine a light through a section of glass with thickness t:</p>
+    <img src="@/assets/PHYS1C/img329.png" />
+    <p>
+      Due to refraction, the ray will exit at a displacement d from the original
+      ray’s path. Our goal is gonna be to find this displacement. Let’s start by
+      breaking down the geometry:
+    </p>
+    <img src="@/assets/PHYS1C/img330.png" />
+    <p>
+      This example is hurting my soul. As you can (kinda) see, we’ve gotten our
+      angles, and outlined some triangles of interest:
+    </p>
+    <img src="@/assets/PHYS1C/img331.png" />
+    <p>
+      So a little bit of geometry should get you there. From here, we can do
+      some trig to solve for d:
+    </p>
+    <img src="@/assets/PHYS1C/img332.png" />
+    <p>
+      There’s a lot of transformations there that I definitely wouldn’t think
+      of, but we got there in the end. Now, of course, no one expects you to
+      remember this equation. However, you should note that light coming in
+      normal to the medium comes out with 0 displacement. We’ll be using that
+      fact in the next section.
+    </p>
+    <p>
+      Before we get there though, we have one more thing to go over: spherical
+      refractive surfaces. As a starting point, we’re going to re-derive our
+      optics equation, starting with the equation from the apparent depth
+      example as a baseline:
+    </p>
+    <img src="@/assets/PHYS1C/img333.png" />
+    <p>
+      If we correct this to be negative since the image is on the opposite side
+      to the emerging light and generalize this so that d is the image distance,
+      D is the object distance, n1 is in the medium where light emerges, and n2
+      is in the medium from where light is incident, we have:
+    </p>
+    <img src="@/assets/PHYS1C/img334.png" />
+    <p>
+      So now we have something that resembles our old optics equation, but we
+      still have one more step. The example we derived this from was a planar
+      refractive surface, so this equation is missing a focus element. Using the
+      definition of a focus, if p goes off to infinity, then the image must be
+      created at the focus, therefore we have:
+    </p>
+    <img src="@/assets/PHYS1C/img335.png" />
+    <p>
+      This is our final optics equation for spherical refractive surfaces (SRS),
+      which are pretty much what the name implies they are. Let’s put up some
+      diagrams for a converging and diverging SRS:
+    </p>
+    <img src="@/assets/PHYS1C/img336.png" />
+    <p>
+      In terms of our conventions, converging devices have a positive focal
+      length and radius of curvature, while diverging devices have negative
+      ones. Now we can see why we wanted to avoid associating convex/concave
+      with any of that. This is made even clearer when you consider what happens
+      if nemg is actually less than ninc. The geometries above would switch, the
+      concave SRS would become a converging device and the convex SRS would
+      become a diverging device. Since this asymmetry provides a new obstacle
+      for us, we’ll fix it in our optics equation with the following:
+    </p>
+    <img src="@/assets/PHYS1C/img337.png" />
+    <p>
+      Feel free to check, but this equation will give us the right signs for SRS
+      to fit the conventions we set out.
+    </p>
+    <p>
+      One thing to note is that the rightmost fraction in all optics equations
+      is what is known as the focusing power of the optics device and is
+      measured in diopters. It’s not super relevant, but I thought I’d bring it
+      up in case you ran into the term.
+    </p>
+    <p>
+      A new property of SRS that we haven’t run into involves reversibility of
+      rays. What happens when light is incident from the right? Well, if you
+      think of this situation in terms of the geometries we described above,
+      you’d figure out that converging SRS are converging from both sides, and
+      diverging SRS are diverging from both sides. As a result, SRS really have
+      2 focal points, and, while we could derive this, I’m just gonna give it to
+      you:
+    </p>
+    <img src="@/assets/PHYS1C/img338.png" />
+    <p>
+      Now with all the facts of SRS down, let’s finally finish off this section
+      with an example:
+    </p>
+    <img src="@/assets/PHYS1C/img339.png" />
+    <p>
+      Just like mirrors, our next step is going to be ray tracing. The rays
+      we’ll be using are, the one that comes in paraxially and intersects the
+      far focus, the one that intersects the optical axis and behaves according
+      to Snell’s Law, and the one that intersects the near focus and comes out
+      paraxially:
+    </p>
+    <img src="@/assets/PHYS1C/img340.png" />
+    <p>
+      Cool deal. Now, if we take the triangles formed by the object and image,
+      we get:
+    </p>
+    <img src="@/assets/PHYS1C/img341.png" />
+    <p>Using these, let’s look at the magnification of the image:</p>
+    <img src="@/assets/PHYS1C/img342.png" />
+    <p>
+      As we can see, we get something very similar to our original magnification
+      equation, but adjusted for the difference in mediums.
+    </p>
+    <p>
+      That finally does it for refraction. I really did let this section go on
+      for so damn long. We’re not quite out of the woods yet though, we have one
+      more optical device to introduce before we throw everything together for
+      the last 2 sections of the unit.
+    </p>
     <h3 ref="6.5">Unit 6.5: Thin Lenses</h3>
+    <p>
+      Time for the last device of this section, and probably the one you’ll see
+      most commonly. To start deriving the tools we’ll need for these, let’s
+      take a refractive surface:
+    </p>
+    <img src="@/assets/PHYS1C/img343.png" />
+    <p>
+      We use dotted lines here to avoid specifying a shape for the refractive
+      surfaces. Take note of how we differentiate between the 2 surfaces. If we
+      were to write the optics equation for each of the surfaces, we’d have:
+    </p>
+    <img src="@/assets/PHYS1C/img344.png" />
+    <p>If we were to add these equations together, we’d get:</p>
+    <img src="@/assets/PHYS1C/img345.png" />
+    <p>
+      Now, since our focus is on thin lenses, we can take the limit as d goes to
+      0:
+    </p>
+    <img src="@/assets/PHYS1C/img346.png" />
+    <p>Now, let’s fully commit to the idea that this is a thin lens:</p>
+    <img src="@/assets/PHYS1C/img347.png" />
+    <p>
+      Since we’re no longer worrying about 2 surfaces, we don’t have to
+      differentiate between 1 and 2. In addition, we’ll modify the names of the
+      indexes of refraction to get:
+    </p>
+    <img src="@/assets/PHYS1C/img348.png" />
+    <p>From here, we can actually fit this into our basic optics equation:</p>
+    <img src="@/assets/PHYS1C/img349.png" />
+    <p>If we define 1/f for thin lenses as:</p>
+    <img src="@/assets/PHYS1C/img350.png" />
+    <p>
+      We derive what is known as the Lensmakers’ Equation. Notice that R1 is the
+      radius of the first surface that incident light hits and R2 is the radius
+      of the second. Our sign conventions will be based on R1. We now have all
+      the basic equations we need to start analyzing thin lenses with a little
+      more detail. Let’s start with biconvex lenses – lenses that are convex on
+      both sides:
+    </p>
+    <img src="@/assets/PHYS1C/img351.png" />
+    <p>
+      By our conventions, R1 is positive (to the right of the device) and R2 is
+      negative (to the left of the device), so, plugging into the Lensmakers’
+      Equation:
+    </p>
+    <img src="@/assets/PHYS1C/img352.png" />
+    <p>
+      Assuming nlens > nmed since, most of the time, we’ll be working with
+      lenses in air, this tells us our focal length is positive, and biconvex
+      lenses are converging devices. This is also what allows us to simplify our
+      sign conventions to a left/right system. If we give biconcave lenses the
+      same treatment:
+    </p>
+    <img src="@/assets/PHYS1C/img353.png" />
+    <p>
+      This always evaluates as negative, so, as you probably expected, biconcave
+      lenses are diverging devices.
+    </p>
+    <p>
+      Now, we just have one more type of thin lens to look at, and that is a
+      crescent-shaped lens:
+    </p>
+    <img src="@/assets/PHYS1C/img354.png" />
+    <p>
+      Obviously, we have 2 regions of interest here. If we plug into our
+      Lensmakers’ Equation using light incident from the left and from the right
+      we get:
+    </p>
+    <img src="@/assets/PHYS1C/img355.png" />
+    <p>
+      Now, we can conclude that all thin lenses have symmetric focal points on
+      either side of the lens. From here, I’ll quickly introduce some shorthand
+      for drawing lenses. We can draw converging lenses as:
+    </p>
+    <img src="@/assets/PHYS1C/img356.png" />
+    <p>And diverging lenses as:</p>
+    <img src="@/assets/PHYS1C/img357.png" />
+    <p>
+      Now it’s time for some deja vu. Remember how we had a collection of 6
+      types of spherical mirror problems that you totally did? Well we’re going
+      to do the same thing here. I’m going to walk you through the first 2 and
+      leave the remaining 4 to you. We’ll start once again with a converging
+      lens and a real object. From that information, we can derive:
+    </p>
+    <img src="@/assets/PHYS1C/img358.png" />
+    <p>
+      Just like before, if we analyze the denominators, we see that there are 2
+      regions of interest.
+    </p>
+    <p>
+      For our first region, where p > f, q will be positive, so we expect a real
+      image. M will be negative, so this image should be inverted. Since p could
+      be a lot bigger or a little bigger than f, we can’t say anything about the
+      size. Now let’s try to prove that with a ray diagram. We can obviously use
+      the 2 rays that will intersect the 2 focal points like we’ve been using
+      for a while, but what about the third? Well, if we take the ray going
+      through the middle of the lens, the lens is essentially flat at that
+      point, and, since it’s a thin lens, there will be no displacement. As a
+      result, we can draw:
+    </p>
+    <img src="@/assets/PHYS1C/img359.png" />
+    <p>As we expected, the image is real and inverted.</p>
+    <p>
+      Now, looking at the situation where p &lt; f, we get a negative q, so the
+      image is virtual, a positive M, so the image is upright, and a small
+      denominator, so the image is large. Let’s see:
+    </p>
+    <img src="@/assets/PHYS1C/img360.png" />
+    <p>
+      There you go. You should now be able to cover the other 3 cases. As a
+      reminder, look at converging lenses with virtual objects, and diverging
+      lenses with real and virtual objects. One of them should have 2 regions of
+      interest. I’m not gonna give you the answers this time, but you should be
+      able to confirm whatever answers you get without too much trouble.
+    </p>
+    <p>
+      That’s it! We’ve introduced pretty much all of optics now. The rest of the
+      unit is going to be applying what we know to certain types of problems
+      you’re going to see.
+    </p>
     <h3 ref="6.6">Unit 6.6: Chained Devices</h3>
+    <p>
+      Ok, so this section really doesn’t have enough material to be a section,
+      but I thought it was important enough to go over. What we’re going to do
+      is go over one example, and then just move on.
+    </p>
+    <p>
+      Chained devices are generally the only hard part of optics. Everything
+      else is more or less the same. Work out the signs, do the geometry, plug
+      into the formula. Chained devices require you to be organized and to pay
+      attention to exactly what you’re doing, or else you’ll get lost.
+    </p>
+    <p>
+      We’re going to cover the visual explanation of what’s happening, and give
+      you some advice about the math afterwards. Let’s set this up. We have an
+      object in front of a thin lens and a planar mirror:
+    </p>
+    <img src="@/assets/PHYS1C/img361.png" />
+    <p>
+      Now, we start this by working with the closest optical device to the
+      incident light first, which would be the converging lens:
+    </p>
+    <img src="@/assets/PHYS1C/img362.png" />
+    <p>
+      So now, this real image created by the lens is going to act as an object
+      for the mirror. We’re going to clean those rays up, otherwise this is
+      going to be a disaster:
+    </p>
+    <img src="@/assets/PHYS1C/img363.png" />
+    <p>
+      What do you mean I moved the mirror up to make this drawing not terrible?
+      How dare you accuse me of that. Anyways, we can see that we now have a
+      virtual image formed on the other side of the mirror. Don’t worry, we’re
+      not done just yet. We have one more interaction to deal with: the second
+      image back through the lens:
+    </p>
+    <img src="@/assets/PHYS1C/img364.png" />
+    <p>
+      Ok the drawing’s still terrible. Didn’t realize how small the final image
+      would be. Anyways hopefully, you get the gist of what we’re doing with
+      these. Of course, the behavior’s gonna change when you swap out devices
+      for each other, but I’d get comfortable doing this kinda stuff.
+    </p>
+    <p>
+      Now, I promised some advice on the math aspect of this. Label everything.
+      Seriously. You’ll have to work with multiple object and image distances,
+      possibly multiple focal points, etc. Since the signs are going to be a
+      nightmare, you need to keep those straight. On that note, break the
+      problem up into stages. Taking it slow means you won’t mess up the sign
+      conventions because you thought the sign was relative to the mirror, but
+      you’re working on the lens or some other nonsense like that.
+    </p>
+    <p>
+      Probably the thing that might trip you up the most is the direction of
+      light. Of course, this is important because it dictates sign conventions.
+      Notice how when we were working on the third device, the incident light
+      switched sides since it reflected off the mirror. Yes that’s how it works.
+      No, don’t forget that. If you can keep yourself organized and not get
+      caught on those edge cases, you’ll be fine. It’s still more or less just
+      plugging into formulas.
+    </p>
     <h3 ref="6.7">Unit 6.7: The Eye</h3>
+    <p>
+      Now we can finally move into the final topic in this section. It’s already
+      taken over 15 hours, so I’ll try to make this quick. This is the point in
+      this class where I really started to wonder why I had to learn this stuff
+      as a CS major. I still haven’t found the answer to that. At least it’s
+      easy-ish.
+    </p>
+    <p>
+      There’s a lot that I could introduce here, but since it isn’t directly
+      relevant to solving problems, I won’t. Instead I’m going to give you 2
+      terms: the near-point and the far-point. As far as I know, if you get
+      eye-related problems, it’ll be about these. The near-point is the point
+      closest to your eye where you can still see clearly. Shockingly, the
+      far-point is the point farthest from your eye where you can still see
+      clearly.
+    </p>
+    <p>
+      What these problems will generally deal with is someone with terrible
+      eyesight (like yours truly) needing a lens to correct their issues. You’ll
+      be given some information about their near/far-point and the desired
+      near/far-point, and you’ll be on your way.
+    </p>
+    <p>
+      Now, the eye itself isn’t going to change. What using a lens can do is
+      take the object at the desired point and create an image of it at the
+      actual point. That image then acts as an object for the eye, and, bish
+      bash bosh, eyesight fixed.
+    </p>
+    <p>
+      You’ll get a variety of problems about this possibly, each of them
+      excluding varying pieces of information, but none of them should be too
+      bad. Since I know that, I’m taking the lazy way out and leaving it at
+      that.
+    </p>
+    <p>
+      We made it! I hated writing that. So many diagrams. You can really tell
+      that I just gave up at the end there. The next unit’s definitely harder in
+      my opinion, but we’re still staying in the algebra-centric part of the
+      class.
+    </p>
     <h2 ref="7">Unit 7: Interference and Diffraction</h2>
+    <p>
+      Ok, now it’s time to bring our last few sections together for a new
+      concept. Personally, I think this would’ve fit better right after the
+      section on electromagnetic waves, but I don’t have a PhD, so what do I
+      know? This is the end of the “easy” stretch of this class so enjoy it
+      while you can. With that said, this unit can still be pretty challenging
+      when it comes to keeping track of all the elements necessary for solving
+      these problems. You’ve probably gotten used to hand-waving derivations of
+      some of these concepts away by this point. Do not do that here. The
+      derivations you see here are going to be pretty important for your ability
+      to succeed in this unit, and learning them is the best way to really grasp
+      what’s going on here.
+    </p>
     <h3 ref="7.1">Unit 7.1: Interference</h3>
+    <p>So, back in Physics 1B we looked at a wave equation that looked like:</p>
+    <img src="@/assets/PHYS1C/img365.png" />
+    <p>
+      Where x describes the distance from the source along the path, t describes
+      the time of observation, and φ describes the initial phase of the wave.
+      Now, let’s imagine we have two sources with light traveling to a point P:
+    </p>
+    <img src="@/assets/PHYS1C/img366.png" />
+    <p>
+      Notice how the light has to travel a different distance from each source.
+      From here we can write:
+    </p>
+    <img src="@/assets/PHYS1C/img367.png" />
+    <p>Adding these together to find the resultant wave, we get:</p>
+    <img src="@/assets/PHYS1C/img368.png" />
+    <p>
+      Now that’s a big boy. Don’t worry we can break this down. We pretty much
+      don’t care about the sine term – all it tells us is that this resultant
+      wave oscillates. Duh. So we can focus on the cosine term, which tells us
+      our resultant amplitude. This amplitude is essentially a function of the
+      overall phase difference between the two waves:
+    </p>
+    <img src="@/assets/PHYS1C/img369.png" />
+    <p>
+      As you can see, Δθtot / 2 is the term inside the cosine from our resultant
+      wave equation. Let’s break up our Δθtot into a new formula:
+    </p>
+    <img src="@/assets/PHYS1C/img370.png" />
+    <p>
+      This tells us that our total phase difference is a result of the sum of
+      the difference due to the path the waves travel and the initial conditions
+      of the waves. Taking this, we can get another formula we’ll need:
+    </p>
+    <img src="@/assets/PHYS1C/img371.png" />
+    <p>
+      Notice that we write this as the change in kL, not k times the change in L
+      like our equation for Δθtot implies. This’ll be important when we start
+      dealing with waves of different wavelengths, but it’s not a big deal for
+      now.
+    </p>
+    <p>
+      So now that we’ve got a baseline down, we can start really looking at
+      interference. Interference is essentially the result of superposition. Two
+      special cases of interference are constructive and destructive
+      interference, which is what we’ll focus on here. From our derivations
+      above, we know that:
+    </p>
+    <img src="@/assets/PHYS1C/img372.png" />
+    <p>
+      Putting this in the context of constructive interference, where Arp must
+      be maximized, we can write:
+    </p>
+    <img src="@/assets/PHYS1C/img373.png" />
+    <p>
+      In English, this means that the total phase difference must be an even
+      number of πs. In other words, for constructive interference to occur,
+      these waves must come in exactly in phase. Makes sense, we’re doing good
+      so far. How about destructive interference where Arp must be minimized:
+    </p>
+    <img src="@/assets/PHYS1C/img374.png" />
+    <p>
+      This implies that the waves must have a phase difference of an odd number
+      of πs. Therefore, for destructive interference to occur, the waves must
+      arrive exactly out of phase. Ok we probably didn’t need to use math to
+      arrive at these conclusions, but now we have formulas. From here, we can
+      start moving on to solving stuff. Hooray.
+    </p>
     <h3 ref="7.2">Unit 7.2: Young's Two-Slit Experiment</h3>
+    <p>
+      This section is definitely more history than you’re probably used to
+      seeing in a physics class, but it sets up the majority of the problems
+      you’ll be seeing related to the first half of this section so, here we go.
+      Let’s come in with the background that Newton had proven conclusively that
+      light was a particle. Young went forward and set up an experiment that
+      looked like:
+    </p>
+    <img src="@/assets/PHYS1C/img375.png" />
+    <p>
+      Obviously, I really should’ve majored in graphic design, but here we are.
+      Essentially, there are two slits a distance d from each other, a screen a
+      distance D from the slits, and coherent light moving towards the slits.
+      Coherent light simply means that the wavelengths of the light are
+      well-defined, and, in this case, will hit the slits in phase. This will
+      create a spectrum of bright and dark fringes on the screen, and tells us
+      that light exhibits wave-like behavior. Ok, history lesson over, physics
+      time. Let’s imagine a point that’s a distance y from the central axis:
+    </p>
+    <img src="@/assets/PHYS1C/img376.png" />
+    <p>
+      As we can see above, when looking at that specific point, the light
+      travels a different distance from each slit. Let’s start breaking this
+      problem down more. Since the two light beams travel a different distance,
+      we know that we’ll have to analyze their phase. We can start with:
+    </p>
+    <img src="@/assets/PHYS1C/img377.png" />
+    <p>
+      When the waves hit the slits, since they are from the same source of
+      coherent light, they must be in phase. The path difference is where all
+      the phase differences come from, but it’s gonna be a little harder to
+      calculate. We could solve for it with a Taylor Series, but we won’t,
+      because Taylor Series are evil. Instead we’ll make a series of
+      approximations:
+    </p>
+    <img src="@/assets/PHYS1C/img378.png" />
+    <p>
+      Didn’t think this drawing could get worse did ya. Stay with me here. What
+      we did here was we swept L1 downwards over to L2 along the red line. This
+      allowed us to visualize the path difference ΔL. Then, we take a line from
+      the central axis to the point we’re analyzing and call that angle θ. Under
+      the assumption that this angle is small, the red line is essentially
+      perpendicular to L1, L2, and the blue line. As a result, using some
+      geometry and trig, we can say that:
+    </p>
+    <img src="@/assets/PHYS1C/img379.png" />
+    <p>
+      Now, let’s start solving for some more formulas. What if we want to look
+      at constructive interference at this point? With what we know, we can
+      write:
+    </p>
+    <img src="@/assets/PHYS1C/img380.png" />
+    <p>
+      Looking at this in the context of the experiment, this makes perfect
+      sense. As we said, constructive interference occurs when the wavelengths
+      arrive exactly in phase. Since there are an integer number of wavelengths
+      in the path difference, this means the waves will still be in phase. What
+      else can we get out of this? What if we wanted to know where these maximas
+      occurred? Well we could rearrange and use the small-angle approximation to
+      say:
+    </p>
+    <img src="@/assets/PHYS1C/img381.png" />
+    <p>
+      Once again looking at the experiment, this means we would have a central
+      maximum, and then regularly spaced maximas (bright fringes) on either side
+      of the central axis. Of course, this was derived using the small-angle
+      approximation, so this even spacing won’t hold for the edges of the screen
+      (large angles), but for the scope of this class, the evenly spaced maximas
+      model works just fine.
+    </p>
+    <p>
+      Let’s look closer at the dimensions that go into this formula. It tells us
+      that closer slits (smaller d) will make the maximas appear farther apart
+      and a smaller wavelength will result in closer maximas. Ok that wasn’t
+      important but it was in my notes so it’s here too.
+    </p>
+    <p>
+      Let’s repeat the same analysis for minimas to analyze destructive
+      interference:
+    </p>
+    <img src="@/assets/PHYS1C/img382.png" />
+    <p>
+      Once again, it makes sense that our path difference is equal to an odd
+      number of half-wavelengths, as this will result in the second wave coming
+      in exactly out of phase with the first. Continuing on:
+    </p>
+    <img src="@/assets/PHYS1C/img383.png" />
+    <p>
+      This implies that the minimas (dark fringes) occur halfway between the
+      maximas, which seems to make sense. One thing to note is that there is no
+      central minima, so the n of the minima is a little offset (n = 0 can be
+      above or below the central axis). Thankfully, the n you assign to each
+      minima or maxima is pretty much arbitrary, so just be careful with that.
+    </p>
+    <p>
+      Well, now that we’ve gotten through all of that, we just need to add one
+      more piece to our interference model.
+    </p>
     <h3 ref="7.3">Unit 7.3: Reflection</h3>
+    <p>
+      Think back to waves in 1B, where waves would flip when reflecting off of a
+      denser medium. The same concept applies to light. Time for more refraction
+      indexes, yay. So let’s modify the definition of our phase difference from
+      before:
+    </p>
+    <img src="@/assets/PHYS1C/img384.png" />
+    <p>
+      As you can see, we now need to add a term to describe the effects of
+      reflection. Thankfully, this is mostly a physical analysis rather than a
+      mathematical one. Remember that a wave flipping is the same as adding π to
+      the phase. This means that our Δθref term must be π when one wave flips.
+      Keep in mind Δθtot is the difference between two waves, so if neither or
+      both of them flip, there is no phase difference due to reflection, so
+      Δθref is 0.
+    </p>
+    <p>
+      So let’s say we have this wave traveling through a medium with index of
+      refraction n. As we know from 1B, the wavelength changes based on the
+      medium, and, by extension, the wave number changes. From this, we have
+      these equations:
+    </p>
+    <img src="@/assets/PHYS1C/img385.png" />
+    <p>
+      One important thing to note about notation is that when mentioning
+      “wavelength”, unless specified otherwise, it is referring to wavelength in
+      a vacuum.
+    </p>
+    <p>
+      As a side note, there is a section in the book on intensity that I’ve
+      elected to skip since it’s not covered in lecture, but I’ll leave you with
+      this formula that gives the amplitude (intensity) of waves at a given
+      point:
+    </p>
+    <img src="@/assets/PHYS1C/img386.png" />
+    <p>
+      Now that we’ve got the foundations down, we can get into the worst section
+      in this unit, but, don’t worry, it’s still not that bad.
+    </p>
     <h3 ref="7.4">Unit 7.4: Thin Films</h3>
+    <p>
+      Ok, for these next diagrams we’re going to be exaggerating everything to
+      make it possible for me to visualize this for you. Let’s say we have a
+      thin film with index of refraction n2 and thickness t, and we shine a
+      light on it:
+    </p>
+    <img src="@/assets/PHYS1C/img387.png" />
+    <p>
+      Some of that light will reflect off of the film, while the rest will
+      penetrate the film, reflect off the bottom, and come out displaced, at the
+      same angle as the other ray. This, of course, creates a path difference
+      that we have to contend with when analyzing the two emerging rays. Tracing
+      out this difference, we see:
+    </p>
+    <img src="@/assets/PHYS1C/img388.png" />
+    <p>
+      Ignoring the section where both rays traveled the same path, one ray
+      traveled a distance L1 in n1 and the other traveled L2 in n2. A little
+      trig later, and we arrive at:
+    </p>
+    <img src="@/assets/PHYS1C/img389.png" />
+    <p>
+      Now, analyzing the path difference, we finally see the importance of using
+      Δ(kL):
+    </p>
+    <img src="@/assets/PHYS1C/img390.png" />
+    <p>
+      Yeesh, long derivation with a lot of math. Don’t worry, that’s basically
+      there to scare you. In the context of this class, we can really just say
+      that the angles θ1 and θ2 are very small. What this implies is that L1 is
+      approximately 0, and therefore, all the path difference comes from L2. As
+      a result, we get:
+    </p>
+    <img src="@/assets/PHYS1C/img391.png" />
+    <p>
+      And that looks a lot better. Going through the long derivation is a good
+      way to get a grip on what is going on inside the film, which is knowledge
+      you will need to solve the problems related to this topic, but the math is
+      more or less blah blah blah.
+    </p>
+    <p>
+      Time for an example. Refer back to the diagrams if you need to. Let’s
+      imagine we needed to make a thin film that was anti-reflective. So, first
+      of all, what does that even mean? Well, if the film was anti-reflective,
+      then an observer wouldn’t see reflected light. In other words, they must
+      see minimas of the reflected light:
+    </p>
+    <img src="@/assets/PHYS1C/img392.png" />
+    <p>
+      Now, thinking about how thin film problems work, we know that Δθic is 0,
+      since the two rays split at a common point. We also know how to get Δθpath
+      for a thin film, so we can write:
+    </p>
+    <img src="@/assets/PHYS1C/img393.png" />
+    <p>
+      So now all we need is the Δθref term. Well, remember that the wave only
+      picks up a phase shift if it reflects off of a material with higher
+      refractive index. Therefore, only the first wave picks up this phase shift
+      and we can plug in and solve:
+    </p>
+    <img src="@/assets/PHYS1C/img394.png" />
+    <p>
+      Be careful not to confuse your n’s. I think the convention is to use m for
+      the order number, but I’m too lazy to go back and re-LaTeX everything, so
+      deal with it.
+    </p>
+    <p>
+      As we can see from this result, we’ll get destructive interference if we
+      have an integer number of half-wavelengths inside the medium n2. Just like
+      before, this physically makes sense, so looks like we’re good here. Not so
+      bad right? The most important thing to watch out for is making sure you’re
+      careful when determining how many phase shifts actually occur due to
+      reflection.
+    </p>
+    <p>
+      One example you can use to test yourself is to analyze what an observer on
+      the bottom of this anti-reflective film would see. Doing this will test
+      your understanding of ray tracing and reflection, so definitely not a bad
+      idea. If done correctly, you should see an inverse relationship between
+      the top observer and the bottom observer. This relationship may be useful
+      for solving problems related to this topic.
+    </p>
+    <p>
+      An important physical distinction to make is that we’ve been analyzing
+      this problem from a normal incidence, saying the rays are practically
+      vertical. However, the wavelengths that are reflected by this thin film
+      change based on the incidence angle of the observer. If you don’t
+      understand why, go back to the diagrams and prove this to yourself before
+      moving on.
+    </p>
+    <p>
+      So let’s move on to our final example of this section. This deals with
+      something known as interferometry, and is an application of these concepts
+      we’ve been dealing with. Imagine we have two anti-reflective glass slides
+      separated by a hair with diameter d:
+    </p>
+    <img src="@/assets/PHYS1C/img395.png" />
+    <p>
+      Our goal is to find this diameter d. Since the slides are anti-reflective,
+      we can ignore the light that would reflect off the top of the top slide
+      and the bottom of the bottom slide. Also note that the thin film we’re
+      analyzing here is the air between the slides, not the slides themselves.
+      Now, let’s look for the dark fringes that appear. Noting that the bottom
+      reflection contributes a phase shift of π:
+    </p>
+    <img src="@/assets/PHYS1C/img396.png" />
+    <p>
+      So, we know we have a dark fringe every half-wavelength starting from n =
+      0. Let’s say m represents the number of dark fringes. Since n starts at 0,
+      we have:
+    </p>
+    <img src="@/assets/PHYS1C/img397.png" />
+    <p>
+      Now, based on the geometry of the problem, we should assume that the hair
+      won’t fall perfectly on a dark fringe, so what we can say is:
+    </p>
+    <img src="@/assets/PHYS1C/img398.png" />
+    <p>
+      From this, we can say that we know the diameter of the hair with an error
+      of ±λ/4. Bam, application covered.
+    </p>
+    <p>
+      That just about covers it for interference. Hopefully my garbage diagrams
+      didn’t confuse you too badly. The rest of this section is pretty easy, so
+      don’t get too stressed just yet.
+    </p>
     <h3 ref="7.5">Unit 7.5: Diffraction</h3>
+    <p>
+      Ok, now we’re onto something that isn’t really interference, but is more
+      or less conceptually the same so I’m putting it in the same unit. Let’s
+      take Young’s two-slit experiment and modify it a little:
+    </p>
+    <img src="@/assets/PHYS1C/img399.png" />
+    <p>
+      Instead of two slits a distance d apart, now there’s only one slit of
+      width d. Now let’s imagine we want to make a minimum at a point P:
+    </p>
+    <img src="@/assets/PHYS1C/img400.png" />
+    <p>
+      Now, if you’re thinking with the two-slit mindset, you might believe you
+      could accomplish this by making the waves from the top and bottom of the
+      slit arrive out of phase. However, this wouldn’t really be a new topic if
+      that were true so let’s try again. This method doesn’t work because you
+      must account for all the waves that travel from the middle of the slit,
+      which would be varying in phase. Keep up, this diagram’s about to look
+      trash:
+    </p>
+    <img src="@/assets/PHYS1C/img401.png" />
+    <p>
+      Gross ok. First, we establish that the screen is far away (D is large).
+      Next, we draw these rays coming from the top and middle of the slit. We
+      know that the phase difference between the green rays is the same as the
+      phase difference between the red and blue rays. This applies for any rays
+      you draw that are an equal distance away from the green rays, all the way
+      down the slit. Knowing this, we can see that in order to get destructive
+      interference, we must make the two green rays arrive exactly out of phase,
+      and every other ray will follow. Terrible explanation, I know, but
+      hopefully you understand. Moving into calculations:
+    </p>
+    <img src="@/assets/PHYS1C/img402.png" />
+    <p>
+      Where θ is the angle between the upper ray and central axis. Ok cool, but
+      now we gotta expand a little further. As you saw in the diagram above, we
+      split the slit into halves. This allowed us to use symmetry to say all the
+      waves arrived out of phase. By the same logic, we could split it into
+      quarters, right? I’m not drawing that, it’ll just look too awful, even for
+      me. Restarting the calculations, we see:
+    </p>
+    <img src="@/assets/PHYS1C/img403.png" />
+    <p>
+      As you can see, we start filling in more and more numbers. Continuing to
+      divide this slit into even sections, we’ll eventually fill in every
+      integer for m, except 0. This means that for a single-slit experiment,
+      minimas occur when:
+    </p>
+    <img src="@/assets/PHYS1C/img404.png" />
+    <p>
+      Just like in the two-slit experiment, the maximas occur halfway-ish
+      between the minimas (halfway for this class). However, notice that the
+      lack of m = 0 for the minimas means that the central maximum is
+      effectively twice as large as the other maximas. Following the pattern we
+      laid out when looking at two-slit, we can keep breaking this formula down
+      to get:
+    </p>
+    <img src="@/assets/PHYS1C/img405.png" />
     <h3 ref="7.6">Unit 7.6: Rayleigh's Criterion</h3>
+    <p>
+      This is a fairly minor topic that for some reason got like a full lecture
+      dedicated to it, so we’re probably going to spend way more time here than
+      necessary.
+    </p>
+    <p>
+      Essentially, this criterion deals with something called resolvability.
+      This is our ability to distinguish between two distinct objects.
+      Obviously, the further you get from two objects, the closer together they
+      appear, and eventually, you won’t be able to tell them apart. Why is this
+      in a physics class? No clue.
+    </p>
+    <p>
+      Rayleigh’s Criterion states that two objects are barely resolvable when
+      the central maximum of one overlaps the first order minimum of the other.
+      This is generally used in relation to objects of the same color (same
+      wavelength).
+    </p>
+    <p>
+      There’s a derivation for what follows, but I really don’t care, and you
+      probably don’t either. You certainly won’t need it for this class, so here
+      are the formulas:
+    </p>
+    <img src="@/assets/PHYS1C/img406.png" />
+    <p>
+      The top formula applies to rectangular apertures, while the bottom one
+      applies to circular apertures. Remember how I said we’re going to spend
+      too much time on this? Well I lied. We’re done. There really isn’t much
+      (or any) complexity to this section, so have fun plugging and chugging for
+      the homework.
+    </p>
     <h2 ref="8">Unit 8: Special Relativity</h2>
+    <p>
+      Now, this section was horribly confusing for me. Everything we’re about to
+      learn pretty much goes against all intuition, but, in my opinion, this was
+      the most interesting unit in any physics class I’ve taken. On the surface,
+      it looks horrible. Past the surface, it still looks horrible. There’s a
+      lot of weird math that we’ve never looked at before, so get ready to pick
+      up some new concepts at light speed. I should honestly pursue stand-up.
+    </p>
+    <p>
+      The depth to which you get into this material is going to be pretty
+      dependent on your professor, so there honestly might only be a few useful
+      sections here. They’ll still be hard sections, so buckle up and try not to
+      get lost too badly.
+    </p>
     <h3 ref="8.1">Unit 8.1: Geometric Transformation</h3>
+    <p>
+      Ok, getting into this, I’ve actually skipped a lot of the historical
+      background and a few examples. I personally find them pretty
+      straightforward and useless, so they aren’t gonna be here. Search up
+      “luminiferous ether” if you care. We’re just gonna get straight into the
+      math.
+    </p>
+    <p>
+      The beginning of this section is generally going to be mathematical
+      background for the physics that’s coming up, but it’s nice to get the
+      review. Let’s imagine two coordinate systems:
+    </p>
+    <img src="@/assets/PHYS1C/img407.png" />
+    <p>
+      Now, let’s say we want to take a coordinate from one system and transform
+      it into the coordinate of the other. Welcome back to linear algebra. It’s
+      matrix time. In general, we can write:
+    </p>
+    <img src="@/assets/PHYS1C/img408.png" />
+    <p>
+      Where M is the matrix responsible for the transformation. Hopefully this
+      sounds at least a little familiar so far. Fitting this to our example, we
+      have:
+    </p>
+    <img src="@/assets/PHYS1C/img409.png" />
+    <p>
+      Writing that in LaTeX is tedious yeesh. Anyways, there are 2 ways to go
+      about solving this system. One way is to analyze the geometry of the
+      problem, which would be fairly easy here, but not so much for the concepts
+      we’re trying to set up, so let’s avoid that method. The other way is to
+      constrain the problem based on what we know. Let’s start by multiplying
+      these matrices out:
+    </p>
+    <img src="@/assets/PHYS1C/img410.png" />
+    <p>
+      Now, let’s figure out our constraints. First of all, we know that the
+      magnitude of the resultant vector must be the same as the magnitude of the
+      original vector, so:
+    </p>
+    <img src="@/assets/PHYS1C/img411.png" />
+    <p>
+      Next, we know that if the coordinate systems are rotated at an angle of
+      0º, the coordinates must remain the same, so:
+    </p>
+    <img src="@/assets/PHYS1C/img412.png" />
+    <p>
+      Finally, we know that if the coordinate systems are rotated at an angle of
+      90º, geometrically, the transformation must be:
+    </p>
+    <img src="@/assets/PHYS1C/img413.png" />
+    <p>
+      Verify these constraints if you want, but I’m going to move forward here.
+      Taking our first constraint, we see that:
+    </p>
+    <img src="@/assets/PHYS1C/img414.png" />
+    <p>
+      Try to reproduce that if you want. Or don’t. I know I wouldn’t. From this
+      equation, we get that:
+    </p>
+    <img src="@/assets/PHYS1C/img415.png" />
+    <p>Now, if we rearrange these equations like a madman, we get:</p>
+    <img src="@/assets/PHYS1C/img416.png" />
+    <p>And if you mesh these all together, you’ll see that:</p>
+    <img src="@/assets/PHYS1C/img417.png" />
+    <p>Now, we can write the matrix as:</p>
+    <img src="@/assets/PHYS1C/img418.png" />
+    <p>
+      If we take a quick look at the second and third constraints, we can
+      resolve the plus-minus symbols and arrive at:
+    </p>
+    <img src="@/assets/PHYS1C/img419.png" />
+    <p>
+      Look at all that progress. All that’s left is to solve for A and B. Taking
+      a numerical analysis of the second and third constraints, we see that:
+    </p>
+    <img src="@/assets/PHYS1C/img420.png" />
+    <p>And from this, we can finally infer that our matrix is:</p>
+    <img src="@/assets/PHYS1C/img421.png" />
+    <p>
+      Now, if you remember rotations from linear algebra, you might remember
+      that the signs on the sine terms were opposite of what was shown above.
+      That’s because in linear algebra, we were shifting the coordinate itself,
+      while, here, we’re shifting the entire coordinate system. This brings into
+      focus the idea of frames of reference, which we’ll be dealing with a lot
+      in this section.
+    </p>
+    <p>
+      Ok so don’t bother memorizing any of what we just did above, there’s no
+      point. You just need to become familiar with this concept in an example
+      that you can easily visualize. From here, we’re going to actually dive
+      into the physics.
+    </p>
     <h3 ref="8.2">Unit 8.2: Galilean Transformation</h3>
+    <p>
+      To start this off, we’re going to introduce something that we’ll be
+      discussing for a while: space-time events. Essentially this is something
+      that happens somewhere and somewhen. We’ll represent it with the
+      following:
+    </p>
+    <img src="@/assets/PHYS1C/img422.png" />
+    <p>
+      There’s a couple things we should clarify here. One, the underline under
+      the r simply indicates this is a 4-dimensional value. The other is the ct
+      you see there. Since this is a vector, we need all the components to be
+      related by units. Since we want to be able to look at time in this
+      context, we can use the speed of light, which is constant in all inertial
+      frames of reference, as a way to convert time to distance. Now that we’ve
+      introduced that, let’s introduce a diagram that we’ll see a lot:
+    </p>
+    <img src="@/assets/PHYS1C/img423.png" />
+    <p>
+      Oh I’m framing that one. Anyways, this is a visualization of the
+      rocket-frame (S’) and the lab-frame (S) – our two frames of reference.
+      Essentially, we’re pretending that a rocket is flying through a lab at
+      high speeds. The axes are really overlapping so that O = O’ in the
+      beginning, but that would be impossible to draw, so just use your
+      imagination. For future sanity checks, it’s important to note that β is a
+      unitless quantity that is less than 1 (nothing’s faster than c).
+    </p>
+    <p>
+      Now, let’s incorporate what we learned in the previous section. Knowing we
+      want to be able to convert between the lab-frame and the rocket-frame, we
+      can write:
+    </p>
+    <img src="@/assets/PHYS1C/img424.png" />
+    <p>
+      Awesome. I hate it. Don’t worry, we won’t have to deal with it much.
+      Imagine the situation we described where the rocket flies through the lab.
+      Assuming we can orient the lab in the direction of the rocket’s path, the
+      y and z components of the lab should be identical to the y’ and z’ of the
+      rocket. This then simplifies down to:
+    </p>
+    <img src="@/assets/PHYS1C/img425.png" />
+    <p>
+      Now, we really only need to focus on the top-left four elements. Let’s
+      write it that way so it looks less scary:
+    </p>
+    <img src="@/assets/PHYS1C/img426.png" />
+    <p>
+      Much like the geometric transformation from earlier, we’re going to need 3
+      constraints to solve this.
+    </p>
+    <p>
+      The first constraint is that time is the same in both frames, or t = t’.
+      The second is, initially, distance is the same in both frames, or at t =
+      t’ = 0, x = x’. And finally, we have that velocity is well-defined, or O’
+      moves in S with velocity v. Don’t overthink these, they mean what you
+      think they do. Now, multiplying the matrix out, we have:
+    </p>
+    <img src="@/assets/PHYS1C/img427.png" />
+    <p>Following the first constraint in the first equation tells us that:</p>
+    <img src="@/assets/PHYS1C/img428.png" />
+    <p>Next, taking the second constraint with the second equation, we have:</p>
+    <img src="@/assets/PHYS1C/img429.png" />
+    <p>
+      So far, this transformation looks a lot like an identity matrix. However,
+      if it were, then there’d be no transformation happening and I would’ve
+      written this section for nothing. To find this last value, let’s take a
+      look at the rocket-frame’s origin in the context of our transformation:
+    </p>
+    <img src="@/assets/PHYS1C/img430.png" />
+    <p>
+      Essentially, at some time t = t’, the origin of the rocket-frame is at,
+      well, the origin in the rocket-frame, which is where the 0 comes from.
+      Duh. In the lab-frame, the rocket has moved vt along the x axis assuming a
+      constant speed. Should also be duh. Multiplying this out, we get:
+    </p>
+    <img src="@/assets/PHYS1C/img431.png" />
+    <p>
+      The first equation shows us that we’re still satisfying our first
+      constraint which is great. Solving the system, we arrive at:
+    </p>
+    <img src="@/assets/PHYS1C/img432.png" />
+    <p>And finally, putting this all together, we get:</p>
+    <img src="@/assets/PHYS1C/img433.png" />
+    <p>
+      This is the Galilean Transformation, named because the constraints used to
+      solve for it were created by Galileo. Fun history lesson mid-topic, that’s
+      right. The subscript 2 is there to denote that this is the 2-dimensional
+      form of the transformation.
+    </p>
+    <p>
+      Now that we have that, let’s start putting random stuff into the rocket.
+      Let’s say a [insert your favorite animal here] was running through the
+      rocket at velocity u:
+    </p>
+    <img src="@/assets/PHYS1C/img434.png" />
+    <p>
+      At this point, you should be able to fill out the space-time events and
+      multiply without explanation from me. Just take a given frame and get the
+      time component and spatial component relative to that frame:
+    </p>
+    <img src="@/assets/PHYS1C/img435.png" />
+    <p>
+      Do I know why I switched the t’s for Δt’s? Of course not! Just go with it.
+      Well once again, the first equation tells us nothing new. In the second
+      equation, you can cancel out all the Δt’s due to our first constraint and
+      replace βc with v. This leaves us with:
+    </p>
+    <img src="@/assets/PHYS1C/img436.png" />
+    <p>
+      This tells us that the speed of the animal with respect to the lab is
+      equal to the sum of the speed of the rocket with respect to the lab and
+      the speed of the animal with respect to the rocket. Maybe you remember
+      that from mechanics. I sure don’t, but it’s somewhat common sense.
+    </p>
+    <p>
+      Now, let’s stop abusing this animal and shoot a photon down the rocket
+      instead:
+    </p>
+    <img src="@/assets/PHYS1C/img437.png" />
+    <p>
+      I don’t know why this image’s quality gets worse every time, but whatever.
+      If you’ve made it this far, you know by now that quality is not my
+      specialty. Anyways, if we follow Galileo’s conventions, we arrive at the
+      conclusion that:
+    </p>
+    <img src="@/assets/PHYS1C/img438.png" />
+    <p>
+      Well then. Something’s obviously wrong here. Turns out that Galileo’s
+      constraints are wrong. So basically, this section was a complete waste.
+      Not really, but we do need to fix this discrepancy.
+    </p>
     <h3 ref="8.3">Unit 8.3: Lorentz Boost</h3>
+    <p>
+      The culprit of this contradiction is Einstein’s postulate that states the
+      speed of light must be the same in all inertial frames of reference. This
+      is clearly in disagreement with Galilean physics. Let’s delve into
+      Einsteinian physics instead.
+    </p>
+    <p>
+      We’ll start by rewriting Galileo’s 3 constraints. We need to keep the 3rd
+      constraint, otherwise we lose the definition of velocity and we can’t have
+      that. Other than that, we remove the first 2 constraints and add
+      Einstein’s postulates. The first of which is that the speed of light is
+      the same in all inertial frames of reference. The second is that the laws
+      of physics are upheld in all inertial frames of reference. If you are
+      paying attention, you’ll notice that we lost the constraints that time is
+      the same in both frames and distance is the same in both frames. Those
+      will come up soon.
+    </p>
+    <p>
+      Let’s imagine we launch a photon down the rocket. We can write our
+      space-time events as:
+    </p>
+    <img src="@/assets/PHYS1C/img439.png" />
+    <p>
+      If you’re confused about why both terms in each event are the same,
+      remember that the speed of the photon is c and distance is speed times
+      time. Let’s see where we get with this:
+    </p>
+    <img src="@/assets/PHYS1C/img440.png" />
+    <p>
+      Hopefully you get what we did there, it shouldn’t be anything new at this
+      point. Now that we have one equation to work with, let’s try to get
+      another. Let’s reverse the direction of the photon, leaving us with:
+    </p>
+    <img src="@/assets/PHYS1C/img441.png" />
+    <p>
+      Now with our second equation, we can add the two together and see that:
+    </p>
+    <img src="@/assets/PHYS1C/img442.png" />
+    <p>
+      Now, let’s repeat what we did for the Galilean Transformation with the
+      third constraint to get:
+    </p>
+    <img src="@/assets/PHYS1C/img443.png" />
+    <p>
+      Unlike before, we can’t say that the Δt’s are equal, so let’s divide the
+      equations instead to get:
+    </p>
+    <img src="@/assets/PHYS1C/img444.png" />
+    <p>This means we can actually write our transformation as:</p>
+    <img src="@/assets/PHYS1C/img445.png" />
+    <p>
+      We denote this with an L because this is called the Lorentz Boost since it
+      was actually Lorentz who came up with this transformation, but it was
+      Einstein who justified it. I’m sure you totally care.
+    </p>
+    <p>
+      Anyways, now we need to work with our final constraint: the laws of
+      physics apply in all frames of reference. What this means in our context
+      is that if the Lorentz Boost can transform from the lab-frame into the
+      rocket-frame, it must also be able to transform from the rocket-frame into
+      the lab-frame. We can therefore write:
+    </p>
+    <img src="@/assets/PHYS1C/img446.png" />
+    <p>
+      The first equation says that the rocket is moving through the lab with a
+      velocity β. The second says that the lab is moving through the rocket at a
+      velocity –β. Sure ok. We can substitute for r and get:
+    </p>
+    <img src="@/assets/PHYS1C/img447.png" />
+    <p>
+      As we can see, the matrix we end up with is perfectly in the form of the
+      identity matrix. All that’s left is to solve for L00(β). Instead of
+      walking through that math, we’re just going to say:
+    </p>
+    <img src="@/assets/PHYS1C/img448.png" />
+    <p>
+      This quantity is given the symbol γ, and is known as the Lorentz Factor.
+      Putting together everything we’ve derived from these constraints so far,
+      we see:
+    </p>
+    <img src="@/assets/PHYS1C/img449.png" />
+    <p>
+      Now, you may be wondering why we derived G2 if it’s just wrong. Well, it
+      isn’t exactly wrong, it just only applies to non-relativistic (low)
+      speeds. Imagine our rocket was moving at a low speed:
+    </p>
+    <img src="@/assets/PHYS1C/img450.png" />
+    <p>Note that if β &lt;&lt; 1, then γ = 1. Therefore, we can write:</p>
+    <img src="@/assets/PHYS1C/img451.png" />
+    <p>
+      You probably noticed that we dropped the β term from the first equation,
+      but not from the second. Notice that the second equation multiplies β by
+      c. Even if β is really small, c is very large, so the term isn’t
+      negligible. Now, if we take the Galilean Transformation:
+    </p>
+    <img src="@/assets/PHYS1C/img452.png" />
+    <p>
+      We notice that our equations are the same, and we’ve proved the Galilean
+      Transformation agrees with the Lorentz Boost at β &lt;&lt; 1. There we go.
+      That’s all the intensive math done for now. Hopefully you’ve understood at
+      least 50% of what we’ve done to get here. We can finally get into the
+      reality-shattering, interesting stuff in the next section.
+    </p>
     <h3 ref="8.4">Unit 8.4: Time Dilation</h3>
+    <p>
+      Now, if you take a look at the L2 we previously derived, we can see that
+      the β’s are responsible for mixing space into time and vice versa. This
+      means that what we view as space in one frame of reference may be both
+      space and time in another. This is going to make it possible for us to
+      treat c as a constant, regardless of the frame of reference.
+    </p>
+    <p>
+      Let’s try to get to some of the consequences of this space-time mixture.
+      Imagine we attach a light that flashes every Δt’ seconds onto the rocket:
+    </p>
+    <img src="@/assets/PHYS1C/img453.png" />
+    <p>Breaking this down into events, we get:</p>
+    <img src="@/assets/PHYS1C/img454.png" />
+    <p>
+      Take the time to make sure you know how we got here please. Let’s put
+      these events into the Lorentz Boost:
+    </p>
+    <img src="@/assets/PHYS1C/img455.png" />
+    <p>
+      Now, let’s start breaking down these equations to see what they tell us.
+      From the first one, we get:
+    </p>
+    <img src="@/assets/PHYS1C/img456.png" />
+    <p>
+      This tells us that for every second in the rocket, γ seconds pass in the
+      lab. Imagine γ was 60, and we have a pair of twins. We put one twin in the
+      rocket and send them off. If they move forward for a year at the given
+      speed, the twin in the lab will have aged 60 years. Wild.
+    </p>
+    <p>
+      Now, here’s where your intuition might start to break. Remember that the
+      laws of physics apply to all frames of reference. That means that the
+      opposite of this must also be true, since, from the rocket’s perspective,
+      it’s the lab that’s moving. So, for every year in the lab, 60 years has
+      also passed in the rocket. That really just doesn’t make sense, but it’s
+      true. The meaning of time has completely changed here. You may wonder,
+      then, what happens if the rocket twin turns around and comes back to the
+      lab twin? Well, by doing that, the rocket breaks the foundation we’ve
+      built up to get here since they’ve accelerated, so let’s not worry about
+      that.
+    </p>
+    <p>
+      This concept, called time dilation, is summarized as “moving clocks run
+      slow”. If the temporal interval between two events in the frame in which
+      they are co-located, which is called the rest frame, is Δt’, the temporal
+      interval in which that rest frame moves with β is γΔt’. To provide some
+      clarification, the frame in which events are co-located is the frame in
+      which the event is not moving.
+    </p>
+    <p>
+      One very important thing to remember is that this only works when the
+      event that is occurring occurs at the same position within the rest frame.
+      If the event moves within the rest frame, then the spatial components mix
+      in with the temporal components and everything gets more confusing
+      somehow.
+    </p>
     <h3 ref="8.5">Unit 8.5: Length Contraction</h3>
+    <p>
+      Now, let’s take the opposite-ish of that. Instead of an event that is
+      constant in space, we’ll take two events that are simultaneous, or
+      constant in time:
+    </p>
+    <img src="@/assets/PHYS1C/img457.png" />
+    <p>Writing these as events once again, we have:</p>
+    <img src="@/assets/PHYS1C/img458.png" />
+    <p>
+      Now we’re going to something we totally haven’t done ever before and apply
+      the Lorentz Boost:
+    </p>
+    <img src="@/assets/PHYS1C/img459.png" />
+    <p>
+      You can see that, despite the events being simultaneous in the
+      rocket-frame, cΔt is non-zero in the lab-frame. Wild Part 2: Electric
+      Boogaloo. Some of the space in the rocket-frame has translated to time in
+      the lab-frame. Simultaneity is relative.
+    </p>
+    <p>
+      Now, you should also see that the distance has a scaling factor attached
+      to it. Let’s think about this. When you make a length measurement, you are
+      performing 2 simultaneous events: finding the front of the object, and
+      finding the back of the object. Now that we know simultaneity is relative,
+      we know that relativistic motion is going to mess with this measurement.
+      When we take a measurement in the lab-frame, we are performing 2
+      simultaneous events in the lab-frame:
+    </p>
+    <img src="@/assets/PHYS1C/img460.png" />
+    <p>
+      Ok, so we did a couple steps there without explanation, but we’ve done it
+      all before, so hopefully you can follow what we’re doing. Let’s take the
+      last 2 equations and solve:
+    </p>
+    <img src="@/assets/PHYS1C/img461.png" />
+    <p>
+      In English, we can say that “moving sticks are shortened along the
+      direction of motion”. If you think about this physically, you should be
+      able to prove to yourself that this is true. This is called length
+      contraction. Remember that this only works for simultaneous events.
+    </p>
+    <p>
+      Let’s try to put what we’ve learned so far into an example. Imagine a
+      really fast runner carrying a 20 ft. pole and a 5 ft. long hallway with
+      doors on either end:
+    </p>
+    <img src="@/assets/PHYS1C/img462.png" />
+    <p>
+      Now that drawing is what we in the industry call “terrible” and “not to
+      scale”, but you get the idea. We’ll interpret this as the runner in the
+      rocket-frame and the hallway in the lab-frame. The question is, if the
+      runner is running at a speed such that their γ is 10, is it possible to
+      close both doors of the hallway at the same time while they’re running
+      through it?
+    </p>
+    <p>
+      Now, taking this with basic length contraction analysis from the hallway’s
+      perspective, you’ll find that the length of the pole is essentially 2 ft.
+      to the hallway, so the answer is yes. However, taking it from the runner’s
+      perspective, we find that the length of the hallway is essentially ½ ft.
+      to the runner, so the answer is no.
+    </p>
+    <p>
+      Well that can’t be right. Remember that we are constrained by the doors
+      closing simultaneously in the lab-frame. However, the doors do not close
+      simultaneously in the rocket-frame. As a result, the answer is in fact
+      yes. Although it is true that the pole cannot fit in a ½ ft. space, it
+      doesn’t have to. The doors do not close at the same time for the runner.
+    </p>
+    <p>Relativity is wack.</p>
     <h3 ref="8.6">Unit 8.6: Relativistic Velocity</h3>
+    <p>
+      Ok, let’s break velocity. Going back to our trusty image, let’s fire a
+      photon in the rocket-frame:
+    </p>
+    <img src="@/assets/PHYS1C/img463.png" />
+    <p>
+      Now, just like always, we’ll write out space-time intervals for this
+      photon and Lorentz Boost them, except we’re going to have to use the
+      4-vector version this time:
+    </p>
+    <img src="@/assets/PHYS1C/img464.png" />
+    <p>
+      Now, I want to point something out that we’ll deal with later. The
+      4-vectors you see above are not legitimate 4-vectors. By definition, a
+      4-vector must transform correctly under the Lorentz Boost. However, due to
+      the Δt scalars, these don’t. This tells us that we can’t really model our
+      classical definition of velocity as a 4-velocity. We’ll cover some of that
+      in the next section though. For now, let’s just continue on:
+    </p>
+    <img src="@/assets/PHYS1C/img465.png" />
+    <p>
+      That doesn’t exactly look fun. We can actually get straight to our final
+      formulas from here by dividing by the temporal component of our velocity.
+      We’ll end up with 2 formulas – one for the component parallel to the
+      direction of v (x-direction), and one for the components perpendicular (y
+      and z-direction):
+    </p>
+    <img src="@/assets/PHYS1C/img466.png" />
+    <p>
+      I don’t know about you, but I wouldn’t exactly call these formulas
+      user-friendly, so let’s do a problem to get ourselves familiar with them.
+      We’ll take 2 rockets flying away from the Earth:
+    </p>
+    <img src="@/assets/PHYS1C/img467.png" />
+    <p>
+      Make sure you make note of what the given speeds are relative to. Now,
+      this example is exactly why we needed to have this discussion on velocity.
+      If we were to take a non-relativistic approach and use Galileo’s
+      intuition, we might say rocket B is moving at 1.4 times the speed of
+      light, which is just clearly wrong.
+    </p>
+    <p>
+      To do this the right way, let’s look at what we’ve got. First thing to
+      notice is that the velocities are all in the x-direction, so we can ignore
+      the perpendicular formula. Now, we just need to figure out what’s what.
+      Since rocket B is relative to rocket A, which is also moving, rocket B is
+      going to be the object moving in the rocket-frame. That makes rocket A the
+      rocket-frame and the Earth the lab-frame. Plugging our values into the
+      formula, we get:
+    </p>
+    <img src="@/assets/PHYS1C/img468.png" />
+    <p>
+      So, as you can see, once you know how to set up the components for these
+      formulas, it really isn’t too hard to solve these types of problems. It’s
+      all about defining your frames and figuring out what velocity is what.
+    </p>
+    <p>
+      Congratulations! You’ve finished all the material for 1C! We’ve now capped
+      off relativistic kinematics with our discussion on velocity and that means
+      there’s no more material you need to know. But wait, then why are there 3
+      more sections? Because Corbin is cruel that’s why. I have to cover those
+      for my final, so I’m writing them up as well. If you also have to cover
+      them, misery loves company, so please join me on the last leg of our
+      journey.
+    </p>
+    <p>
+      If you don’t have to learn them, well, good on ya. I wish you the best of
+      luck in life and thank you for using this guide, skip ahead to the
+      practice problems and read the afterword if you either have a heart, love
+      puppies, or don’t want to die alone. Otherwise, well, we see your true
+      colors now.
+    </p>
     <h3 ref="8.7">Unit 8.7: 4-Momentum</h3>
+    <p>
+      Now, before we start our dive into this new section, we have to go back to
+      an issue we ran across in the previous section: validity of 4-vectors. In
+      reality, this is probably going to just be an introduction into what a
+      4-vector really is.
+    </p>
+    <p>
+      You may be wondering why I didn’t just make this a separate section. Well,
+      since there are now probably 0 of you reading this since we’re in optional
+      material now, I get to care less about what makes sense. Not that I really
+      cared in the first place judging from 90% of this guide’s content.
+    </p>
+    <p>
+      Ok back to physics. The big thing we’re going to be using to judge
+      4-vectors is the fact that all vectors’ inner-products are invariant,
+      regardless of frame. What this means is:
+    </p>
+    <img src="@/assets/PHYS1C/img469.png" />
+    <p>
+      This property must hold if u and v are valid 4-vectors. Now, you may be
+      wondering what the inner-product of a 4-vector is. For reasons we won’t
+      derive here, it is:
+    </p>
+    <img src="@/assets/PHYS1C/img470.png" />
+    <p>
+      Now, we’ve been talking a lot about how space mixes with time depending on
+      your frame of reference. I think, instinctually, we view this as a classic
+      coordinate axis. However, this inner-product tells us that it can’t be a
+      flat axis like we’re used to, otherwise the inner-product would simply be
+      Euclidian. This product tells us that the space-time fabric is actually a
+      curved structure.
+    </p>
+    <p>
+      So with this foundation, let’s start working our way into dynamics. Since
+      the inner-product of 4-vectors is the same, the inner-product of our
+      space-time 4-vector is gonna be important, let’s start there:
+    </p>
+    <img src="@/assets/PHYS1C/img471.png" />
+    <p>Since this quantity is so important, we give it a formal definition:</p>
+    <img src="@/assets/PHYS1C/img472.png" />
+    <p>
+      Here, the τ is called the proper time. Proper time defines the time
+      between events in the frame in which they are co-located. Remember that
+      there is only one frame in which a given set of events is co-located. Due
+      to yet another derivation I’m going to skip, we can write this simply as:
+    </p>
+    <img src="@/assets/PHYS1C/img473.png" />
+    <p>Where γu represents the γ of an object moving through the lab.</p>
+    <p>
+      Ok what does this help us with? Well, to do dynamics, we have to be able
+      to talk about 4-velocity. We noted that we can’t define velocity like we
+      normally would, because that resulted in an invalid 4-vector. Since proper
+      time is simply a scaling factor and space-time is a valid 4-vector, let’s
+      redefine it as follows:
+    </p>
+    <img src="@/assets/PHYS1C/img474.png" />
+    <p>
+      Now, this adds another dimension of complexity, as we now have to find the
+      proper time whenever we want to define velocity. But what if we didn’t?
+      Using chain rule, we can rewrite this as:
+    </p>
+    <img src="@/assets/PHYS1C/img475.png" />
+    <p>
+      We can prove this is in fact a valid representation of 4-velocity.
+      However, we will not, because we are lazy. We will instead point out that
+      the 4-velocity of any particle with mass is c, and the 4-velocity of any
+      massless particle is 0.
+    </p>
+    <p>
+      Now, we’re one step closer to dynamics. Knowing mass is a scalar and
+      constant in all frames of reference, we can define 4-momentum as follows:
+    </p>
+    <img src="@/assets/PHYS1C/img476.png" />
+    <p>
+      Notice the shorthand version of the 4-velocity. Make sure that, if you use
+      this shorthand, you don’t confuse it for a 2-D vector, the u still has 3
+      components. If we multiply this out, the spatial component ends up being:
+    </p>
+    <img src="@/assets/PHYS1C/img477.png" />
+    <p>
+      You may recognize this as one of the formulas I pulled out of thin air
+      when we were discussing light pressure. As we now know, relativistic
+      topics generally require a lot of correction of classical mechanics, this
+      just happens to be one of them. Looking at the temporal component, we can
+      write:
+    </p>
+    <img src="@/assets/PHYS1C/img478.png" />
+    <p>
+      Part of that probably looks familiar to you. It’ll look even more familiar
+      when we Taylor Expand (EWWWWWW) the denominator:
+    </p>
+    <img src="@/assets/PHYS1C/img479.png" />
+    <p>
+      Very familiar indeed. In fact, the temporal component of momentum is E/c.
+      We can now rewrite the 4-momentum:
+    </p>
+    <img src="@/assets/PHYS1C/img480.png" />
+    <p>If the given particle was at rest, we can say:</p>
+    <img src="@/assets/PHYS1C/img481.png" />
+    <p>
+      From here, we can use the fact that the inner-product must be invariant to
+      write:
+    </p>
+    <img src="@/assets/PHYS1C/img482.png" />
+    <p>
+      Regardless of the speed of a given particle, the 4-momentum of that
+      particle is m2c2. This is an incredibly important relationship that we’ll
+      be working with a lot in the remainder of the unit. For now though, we’ll
+      close out this section by looking at this equation for photons (massless
+      particles):
+    </p>
+    <img src="@/assets/PHYS1C/img483.png" />
+    <p>
+      And now, we’ve derived both the equations we made up for light pressure.
+      Don’t worry, hard stuff coming up.
+    </p>
     <h3 ref="8.8">Unit 8.8: Relativistic Dynamics</h3>
+    <p>
+      The goal of this section is to start applying the very abstract foundation
+      we created in the last one. Let’s imagine an elastic collision between 2
+      particles:
+    </p>
+    <img src="@/assets/PHYS1C/img484.png" />
+    <p>
+      That’s kinda like a before and after type of deal right there. We want to
+      find m3. Now, we’d expect the masses to just add up. We should also know
+      by now that nothing’s gonna be that easy. Let’s take a deep dive, starting
+      with 4-momentum being conserved:
+    </p>
+    <img src="@/assets/PHYS1C/img485.png" />
+    <p>
+      For a lot of these examples, the hardest part is figuring out the first
+      step. In this case, we’re going to take the inner-product of both sides
+      (square both sides):
+    </p>
+    <img src="@/assets/PHYS1C/img486.png" />
+    <p>
+      So far, just a little algebra. Now, we can use the relationship we
+      described from the last section to substitute:
+    </p>
+    <img src="@/assets/PHYS1C/img487.png" />
+    <p>
+      Now, we’re going to need to get a little more information out of this
+      problem to solve from here. Since m2 is at rest, we know its energy is
+      equal to its rest energy, and it has no 3-momentum:
+    </p>
+    <img src="@/assets/PHYS1C/img488.png" />
+    <p>We can use a little more of what we know to get rid of the E1 term:</p>
+    <img src="@/assets/PHYS1C/img489.png" />
+    <p>
+      So as we can see, some of the kinetic energy of the original particle
+      becomes mass. Energy and mass are intertwined. This idea that we just
+      derived is part of the purpose of particle accelerators.
+    </p>
+    <p>
+      Now let’s move on to another problem. Let’s take 2 photons and make them
+      collide. In theory we should get a particle out of this. Let’s see:
+    </p>
+    <img src="@/assets/PHYS1C/img490.png" />
+    <p>
+      So, I skipped a step there, but you should be fine, same setup as last
+      time. Now, the difference here is that the original particles have no mass
+      since they’re photons. Therefore:
+    </p>
+    <img src="@/assets/PHYS1C/img491.png" />
+    <p>
+      From there, we can apply our Physics 1A knowledge to simplify a little
+      further:
+    </p>
+    <img src="@/assets/PHYS1C/img492.png" />
+    <p>So how do we find the magnitude of these momentums? Well, recall:</p>
+    <img src="@/assets/PHYS1C/img493.png" />
+    <p>So, for a massless particle, we have:</p>
+    <img src="@/assets/PHYS1C/img494.png" />
+    <p>
+      There we go. Mathematically, we’ve proven that we can make mass out of 2
+      photons smashing into each other. Now, let’s take a look at something a
+      little different. Let’s say a particle at rest decays, resulting in 2
+      particles in motion:
+    </p>
+    <img src="@/assets/PHYS1C/img495.png" />
+    <p>
+      Now, we don’t know exact information on the directions of the resultant
+      particles, but we know they are opposite by conservation of momentum.
+      Let’s say our goal is to find the energy of particle 2. Setting up, we
+      have:
+    </p>
+    <img src="@/assets/PHYS1C/img496.png" />
+    <p>
+      Now, for problems like this where there are 2 particles in the instant
+      you’re analyzing, it’s often helpful to solve for the particle you aren’t
+      interested in:
+    </p>
+    <img src="@/assets/PHYS1C/img497.png" />
+    <p>
+      As you can see, solving for the other particle allows that particle to
+      only appear once in the equation, resulting in:
+    </p>
+    <img src="@/assets/PHYS1C/img498.png" />
+    <p>
+      Taking advantage of the fact that the original particle is at rest, we
+      have:
+    </p>
+    <img src="@/assets/PHYS1C/img499.png" />
+    <p>
+      There we go. Hopefully, by now you’re seeing that this looks complicated,
+      but it really isn’t too hard. For the most part, it’s remembering your
+      conditions and being careful with your algebra. Let’s take a look at what
+      is probably the most complex thing you’ll see:
+    </p>
+    <img src="@/assets/PHYS1C/img500.png" />
+    <p>
+      Essentially, 2 particles are going to collide and a third is going to be
+      formed without changing the mass of the other 2. We want to find the
+      minimum energy of particle 1 that makes this possible. Starting off:
+    </p>
+    <img src="@/assets/PHYS1C/img501.png" />
+    <p>
+      Now, here’s where things get iffy. Neither of the starting methods we’ve
+      done so far will work here. In cases like this, what we want to do is find
+      a way to work in the simplest possible frame available. Recall from
+      Physics 1A:
+    </p>
+    <img src="@/assets/PHYS1C/img502.png" />
+    <p>
+      As you can see from that, the simplest frame possible would be the frame
+      of the center of mass, since the velocity of the center of mass in the
+      center of mass frame is 0, leading net 3-momentum to be 0. We can
+      manipulate the inner-product to allow us to shift frames since the
+      inner-product is invariant between frames:
+    </p>
+    <img src="@/assets/PHYS1C/img503.png" />
+    <p>
+      Now, remember we’re looking for the minimum energy requirement. As a
+      result, the final particles should all be stationary, as motion requires
+      energy that we don’t need to account for. If we cancel some things out and
+      use the fact that the particles are all at rest in the center of mass
+      frame, we get:
+    </p>
+    <img src="@/assets/PHYS1C/img504.png" />
+    <p>
+      And that brings us to the end of general cases of relativistic dynamics. A
+      lot of stuff to keep track of, but nothing too insanely hard here.
+    </p>
+    <p>
+      Well done, we’re in the endgame now. Only one more section. Are you hyped?
+      I’m hyped.
+    </p>
     <h3 ref="8.9">Unit 8.9: Compton Scattering</h3>
+    <p>
+      Compton Scattering is a phenomenon with a very similar setup to our other
+      dynamics examples:
+    </p>
+    <img src="@/assets/PHYS1C/img505.png" />
+    <p>
+      We have a photon colliding with an electron initially at rest. The thing
+      that makes this problem interesting is that the wavelength of the photon
+      changes upon collision. This gives us an extra element to analyze while
+      we’re working with this problem. Let’s start as usual:
+    </p>
+    <img src="@/assets/PHYS1C/img506.png" />
+    <p>
+      As we said before, we want to solve for the particle we’re not interested
+      in. Since the photon is the one exhibiting interesting behavior, we’ll
+      solve for the electron:
+    </p>
+    <img src="@/assets/PHYS1C/img507.png" />
+    <p>Taking the inner-product of both sides:</p>
+    <img src="@/assets/PHYS1C/img508.png" />
+    <p>
+      I’m willing to bet you didn’t keep up with that simplification in that
+      last step. I wouldn’t concern yourself too much with the details, you’ve
+      got the derivation right here right? Anyways, if we remember that the
+      3-momentum of a massless particle is E/c, we can simplify even further:
+    </p>
+    <img src="@/assets/PHYS1C/img509.png" />
+    <p>
+      Now, with what we’ve covered so far, nothing here can really tell us
+      anything about the wavelength. So let’s pull in a relationship you
+      probably learned in high school:
+    </p>
+    <img src="@/assets/PHYS1C/img510.png" />
+    <p>
+      If you’re wondering what the new Greek letter is, that’s the same thing as
+      frequency. Anyways, this relationship discovered by Planck describes the
+      energy of electromagnetic waves, not mechanical waves. Plugging this into
+      our previous equation, we can get to our final relationship:
+    </p>
+    <img src="@/assets/PHYS1C/img511.png" />
+    <p>
+      Of course, if you haven’t picked up on it yet, the mass here is referring
+      to the mass of an electron, considering it’s the only particle with mass
+      in this system.
+    </p>
+    <p>
+      Now, if your professor is on the same schedule Corbin was on, you’ll have
+      approximately 15 minutes from here to discuss the relativistic form of
+      Doppler Effect. Since this 15 minute discussion really wasn’t very
+      informative, I don’t have anything to say about it. I’m pretty confident
+      in saying that the most helpful thing I can do for you regarding that is
+      leave you with the equation:
+    </p>
+    <img src="@/assets/PHYS1C/img512.png" />
+    <p>
+      And that’s that. It’s been one hell of a journey, thanks for sticking
+      around. Now, there’s just one more page to read (pls read it).
+    </p>
     <h2 ref="after">Afterword</h2>
+    <p>
+      Hi, if you’re reading this you’re already one of my favorite people. I’m
+      proud of you for making it through this. Hopefully you didn’t just rely on
+      me for your grade because I’m really not too optimistic about my
+      college-level physics tutoring skills, especially on a writeup like this.
+    </p>
+    <p>
+      If you’re anything like me, you’re in the middle of celebrating never
+      having to take another physics class again. I’m writing this as I pray for
+      a B in my 1C class (I got an A!), I can only hope that you’ve done better.
+      All things considered, I feel like I did a decent job of putting the
+      entirety of the course material into this writeup. I do hope I was able to
+      help you in some way, but I’m not expecting this to have been a perfect
+      experience by any means.
+    </p>
+    <p>
+      Speaking of, I’m sure there’s a lot of things I could’ve done better
+      throughout this guide, this was the first one I completed, so a lot of
+      troubleshooting happened in the middle of writing it. If you have
+      feedback/errors to report, I’d love to hear about it.
+    </p>
+    <p>
+      I wish you good luck on whatever you’re headed to next, and if you happen
+      to run into one of my guides again, well, you’ll know what to expect.
+    </p>
   </div>
 </template>
 

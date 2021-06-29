@@ -149,13 +149,13 @@
     </h4>
     <h4
       class="link"
-      @click="() => $refs['4.6'].scrollIntoView({ behavior: 'smooth' })"
+      @click="() => $refs['4.7'].scrollIntoView({ behavior: 'smooth' })"
     >
       4.7: Matrix Representations
     </h4>
     <h4
       class="link"
-      @click="() => $refs['4.6'].scrollIntoView({ behavior: 'smooth' })"
+      @click="() => $refs['4.8'].scrollIntoView({ behavior: 'smooth' })"
     >
       4.8: Isomorphisms and Planarity
     </h4>
