@@ -1,7 +1,7 @@
-# DARS++
+# CZhangy's Survival Guides
 
 ## Project Summary
-The CZhangy Survival Guides are a group of write-ups for computed science-related courses that I have taken at UCLA. They are intended to help teach course material from a student's perspective, and are readily available online, in a basic, responsive format for those that would like to use them. 
+CZhangy's Survival Guides are a group of write-ups for computed science-related courses that I have taken at UCLA. They are intended to help teach course material from a student's perspective, and are readily available online, in a basic, responsive format for those that would like to use them. 
 
 The most up-to-date version of CZhangy's Survival Guides is currently deployed at: https://czhangy-survival-guides.netlify.app/.
 
